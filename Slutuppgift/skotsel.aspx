@@ -23,6 +23,6 @@
             <asp:TextBox ID="ålder" runat="server" placeholder="Ålder" ></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="comfirm" runat="server" Text="Skicka uppgifter"/>
+            <asp:Button ID="comfirm" runat="server" Text="Skicka uppgifter" OnClick="comfirm_Click"/>
         </p>
 </asp:Content>

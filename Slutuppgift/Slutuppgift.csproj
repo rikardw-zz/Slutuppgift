@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Jaktlag.xml" />
+    <Content Include="registreradeuppgifter.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="start.aspx">
@@ -78,6 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registreradeuppgifter.aspx.cs">
+      <DependentUpon>registreradeuppgifter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registreradeuppgifter.aspx.designer.cs">
+      <DependentUpon>registreradeuppgifter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,6 +138,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
