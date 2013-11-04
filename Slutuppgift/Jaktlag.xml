@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <jakt>
-  <jaktlag jaktlag="Frösö jaktlag">
+  <jaktlag>
+    <jaktlagsnamn>Frösö jaktlag</jaktlagsnamn>
     <namn>Svenne</namn>
     <datum></datum>
     <kön>Hane</kön>
@@ -8,7 +9,8 @@
     <taggar>32</taggar>
     <ålder>3</ålder>
   </jaktlag>
-  <jaktlag jaktlag="Östersund jaktlag">
+  <jaktlag>
+    <jaktlagsnamn>Ocke jaktlag</jaktlagsnamn>
     <namn>Harry</namn>
     <datum></datum>
     <kön>Hane</kön>
@@ -16,7 +18,8 @@
     <taggar></taggar>
     <ålder></ålder>
   </jaktlag>
-  <jaktlag id="hej">
+  <jaktlag>
+    <jaktlagsnamn>Test jaktlaget</jaktlagsnamn>
     <namn>hej</namn>
     <datum>10/31/2013</datum>
     <kön>Hona</kön>
@@ -24,12 +27,30 @@
     <taggar>23</taggar>
     <ålder>4</ålder>
   </jaktlag>
-  <jaktlag id="Test">
+  <jaktlag>
+    <jaktlagsnamn>Prickskyttarna</jaktlagsnamn>
     <namn>Tesssst</namn>
     <datum>11/30/2013</datum>
     <kön>Hane</kön>
     <vikt>700</vikt>
     <taggar>90</taggar>
     <ålder>30</ålder>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Misskyttarna</jaktlagsnamn>
+    <namn>ooooo</namn>
+    <datum>ooooo</datum>
+    <kön>ooooo</kön>
+    <vikt>ooooo</vikt>
+    <taggar>ooooo</taggar>
+    <ålder>ooooo</ålder>
+  </jaktlag>
+  <jaktlag id="TEST">
+    <namn>asdf</namn>
+    <datum>asdf</datum>
+    <kön>asdf</kön>
+    <vikt>asdf</vikt>
+    <taggar>asdf</taggar>
+    <ålder>asdf</ålder>
   </jaktlag>
 </jakt>
