@@ -18,8 +18,8 @@ namespace Slutuppgift
                     select script;
             foreach (var item in v)
             {
-                Response.Write(item + "<br />");
-            }
+                jaktlagInfo.Items.Add(item.Value + "");                
+            }      
         }
     }
 }

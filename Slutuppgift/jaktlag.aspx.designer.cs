@@ -11,5 +11,14 @@ namespace Slutuppgift {
     
     
     public partial class WebForm2 {
+        
+        /// <summary>
+        /// jaktlagInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList jaktlagInfo;
     }
 }
