@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="start.aspx" title="Startsida"  description="Startsida">
+        <siteMapNode url="jaktlag.aspx" title="Jaktlag"  description="Jagktlag" />
+        <siteMapNode url="skotsel.aspx" title="Älgskötsel"  description="Älgskötsel" />
+        <siteMapNode url="login.aspx" title="Inloggning"  description="Inloggning" />        
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,116 @@
+﻿h1 {
+	font-family: Arial;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	font-size: 50px;
+	color: white;		
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-shadow:3px 3px 10px black;
+}
+
+h2 {	
+    font-family: Arial;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+	color: black;			
+		
+} 
+
+p {
+		
+}
+
+body{
+	font-family: Arial;
+	margin: 40px;
+	background-image:url('bakgrund1.jpg');
+	background-repeat:repeat;
+
+
+}
+
+.container{
+	background-image:url('bakgrund2.jpg');
+	background-repeat:repeat;
+	margin: auto;
+	padding: 10px;
+	width: 600px;
+	height: 630px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 10px;
+}
+
+.login {  
+    float: right;
+    color: white;     
+    font-family: Arial;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+	color: black;	    
+}
+
+.links{
+	margin: auto;
+	width: 600px;
+	height: 25px;
+	border-style: solid;
+	border-width: 3px;
+	
+}
+
+.mainwindow{
+	background-image:url('bakgrund3.jpg');
+	background-repeat:repeat;
+	padding: 5px;
+	padding-top: 20px;
+	width: 584px;
+	height: 500px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 10px;
+		
+}
+
+
+ul { /*tar bort knappar samt tab på list-items*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+width:auto;
+}
+
+li
+{
+float:left;
+width: auto;
+}
+
+ul li a, ul li a:visited /*gör att hela området (60pixlar brett) blir klickbart*/
+{
+border-style: solid;
+border-color: black;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+display: block;
+width: 136px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#633618;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+ul li a:hover, ul li a:active
+{
+background-color:#99603A;
+}

@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Slutuppgift.Site1" %>
+
+<!DOCTYPE html>
+<html>
+	<head runat="server">
+		<title>
+			Älgsidan
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<form id="form1" runat="server">
+		<div class="container">
+            <div class="login">
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </div>
+			<h1>Älgskjutarsidan</h1>
+				<ul><li><a href="start.aspx">Start</a></li>
+				<li><a href="jaktlag.aspx">Jaktlag</a></li>
+				<li><a href="skotsel.aspx">Älgskötsel</a></li>
+				<li><a href="kontakt.aspx">Kontakt</a></li>
+				</ul><br>
+			<div class="mainwindow">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+              </asp:ContentPlaceHolder>
+			</div>
+		</div>
+	    </form>
+	</body>
+</html>
