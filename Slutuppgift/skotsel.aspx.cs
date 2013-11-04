@@ -27,8 +27,6 @@ namespace Slutuppgift
 
         protected void comfirm_Click(object sender, EventArgs e)
         {
-
-
             XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));         
                 xelement.Add
                (new XElement("jaktlag", jaktlag.Text),

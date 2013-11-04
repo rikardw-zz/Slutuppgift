@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.IO;
+using System.Xml.Linq;
 
 namespace Slutuppgift
 {
@@ -11,7 +14,12 @@ namespace Slutuppgift
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var v = from script in XElement.Load(Server.MapPath("Jaktlag.xml")).Elements("jaktlag")
+                    select script;
+            foreach (var item in v)
+            {
+                Response.Write(item + "<br />");
+            }
         }
     }
 }
