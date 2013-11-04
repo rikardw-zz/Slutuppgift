@@ -27,10 +27,9 @@ namespace Slutuppgift
 
         protected void comfirm_Click(object sender, EventArgs e)
         {
-   //         XElement xelement = XElement.Load(@"C:\Users\Patrick\Documents\GitHub\Slutuppgift\Slutuppgift\Jaktlag.xml");
 
-            xDoc.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates/Template.cfg"));
 
+            XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));         
                 xelement.Add
                (new XElement("jaktlag", jaktlag.Text),
                 new XElement("namn", shootername.Text),
@@ -40,8 +39,7 @@ namespace Slutuppgift
                 new XElement("taggar", taggar.Text),
                 new XElement("ålder", ålder.Text)
                 );
-                xelement.Save(@"C:\Users\Patrick\Documents\GitHub\Slutuppgift\Slutuppgift\Jaktlag.xml"); 
-  
+                xelement.Save((Server.MapPath("Jaktlag.xml")));   
         }
     }
 }
