@@ -57,16 +57,32 @@ namespace Slutuppgift
             
 
         }
-            public List<string> HämtaJaktledare(string jaktledare)
+ */
+            public List<string> HämtaJaktledare(string jaktlagsnamn)
             {
                 XElement jaktlag = XElement.Load(path);
+                //har hela jaktlagselement,består av tre olika saker
+                XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
+                                        where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                        select a.Element("jaktledare")).Single();
 
-                var aktuellJaktledare = (from a in jaktlag.Elements("jaktledare")
-                                     where (string)a.Element("jaktledare") == jaktledare
-                                     select (string)(a.Element("titel"))).ToList<string>();
-                return aktuellaAlbum;
+                List<string> jaktledarinfo = new List<string>();
+                jaktledarinfo.Add(aktuellJaktledare.Element("namn").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("email").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("telefon").Value);
+
+                return jaktledarinfo;
             }
-        */
+
+            protected void jaktlagInfo_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                List<string> jaktledarinfo = new List<string>();
+                jaktledarinfo = HämtaJaktledare(jaktlagInfo.Text);
+                getjaktledarnamn.Text = jaktledarinfo[0];
+                getepost.Text = jaktledarinfo[1];
+                gettelefon.Text = jaktledarinfo[2];
+            }
+        
 
     }
 }
