@@ -37,10 +37,10 @@
       <ålder>0</ålder>
     </avskutning>
     <avskutning>
-      <namn>Jörgen</namn>
+      <namn>Bosse</namn>
       <datum>029397</datum>
       <kön>Hona</kön>
-      <vikt>10</vikt>
+      <vikt>100</vikt>
       <taggar>0</taggar>
       <ålder>0</ålder>
     </avskutning>
@@ -61,7 +61,7 @@
       <namn>Sven</namn>
       <datum>32424332</datum>
       <kön>Hane</kön>
-      <vikt>560</vikt>
+      <vikt>50</vikt>
       <taggar>24</taggar>
       <ålder>2</ålder>
     </avskutning>
@@ -78,8 +78,8 @@
     <jaktlagsnamn>Moosehunters</jaktlagsnamn>
     <jaktledare>
       <namn>Svempa Ollson</namn>
-      <email>anders@hotmail.com</email>
-      <telefon>074355645</telefon>
+      <email>svempa@coolguy.com</email>
+      <telefon>074353333</telefon>
     </jaktledare>
     <rapportör>
       <namn>RapporteringsNils</namn>
