@@ -53,4 +53,13 @@
     <taggar>asdf</taggar>
     <ålder>asdf</ålder>
   </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Putte</jaktlagsnamn>
+    <namn>Putte</namn>
+    <datum>Putte</datum>
+    <kön>Putte</kön>
+    <vikt>Putte</vikt>
+    <taggar>Putte</taggar>
+    <ålder>Putte</ålder>
+  </jaktlag>
 </jakt>

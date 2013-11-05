@@ -28,9 +28,20 @@ namespace Slutuppgift
         protected void comfirm_Click(object sender, EventArgs e)
         {
           
-            XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));  
+            XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));
+
+            xelement.Add(new XElement("jaktlag",
+        new XElement("jaktlagsnamn", jaktlag.Text),
+                new XElement("namn", shootername.Text),
+                new XElement("datum", date.Text),
+                new XElement("kön", kön.Text),
+                new XElement("vikt", vikt.Text),
+                new XElement("taggar", taggar.Text),
+                new XElement("ålder", ålder.Text)
+        ));
+            xelement.Save((Server.MapPath("Jaktlag.xml")));   
        
-             xelement.Add(new XElement("jaktlag", new XAttribute("id", jaktlag.Text),
+  /*           xelement.Add(new XElement("jaktlag", new XAttribute("id", jaktlag.Text),
                 new XElement("namn", shootername.Text),
                 new XElement("datum", date.Text),
                 new XElement("kön", kön.Text),
@@ -38,7 +49,7 @@ namespace Slutuppgift
                 new XElement("taggar", taggar.Text),
                 new XElement("ålder", ålder.Text)
                 ));
-                xelement.Save((Server.MapPath("Jaktlag.xml")));   
+                xelement.Save((Server.MapPath("Jaktlag.xml")));   */
         }
     }
 }

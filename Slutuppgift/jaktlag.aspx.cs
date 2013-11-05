@@ -31,7 +31,7 @@ namespace Slutuppgift
         {
             XElement jakt= XElement.Load(path);
 
-            var albumSamling = (from a in jakt.Elements("jaktlag").Attributes("id")
+            var albumSamling = (from a in jakt.Elements("jaktlag").Elements("jaktlagsnamn")
                                 
                                 select (string)a).Distinct().ToList<string>();
             return albumSamling;
