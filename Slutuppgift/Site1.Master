@@ -19,8 +19,8 @@
 			<h1>Älgskjutarsidan</h1>
 				<ul><li><a href="start.aspx">Start</a></li>
 				<li><a href="jaktlag.aspx">Jaktlag</a></li>
-				<li><a href="skotsel.aspx">Älgskötsel</a></li>
-				<li><a href="kontakt.aspx">Kontakt</a></li>
+				<li><a href="skotsel.aspx">Rapportering</a></li>
+				<li><a href="andra_uppgifter.aspx">Ändra uppgift</a></li>
 				</ul><br>
 			<div class="mainwindow">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

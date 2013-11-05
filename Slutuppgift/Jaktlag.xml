@@ -1,118 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <jakt>
   <jaktlag>
-    <jaktlagsnamn>Frösö jaktlag</jaktlagsnamn>
-    <namn>Svenne</namn>
-    <datum></datum>
-    <kön>Hane</kön>
-    <vikt>234</vikt>
-    <taggar>32</taggar>
-    <ålder>3</ålder>
-    <avskutning>skottola</avskutning>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Ocke jaktlag</jaktlagsnamn>
-    <namn>Harry</namn>
-    <datum></datum>
-    <kön>Hane</kön>
-    <vikt></vikt>
-    <taggar></taggar>
-    <ålder></ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Test jaktlaget</jaktlagsnamn>
-    <namn>hej</namn>
-    <datum>10/31/2013</datum>
-    <kön>Hona</kön>
-    <vikt>342</vikt>
-    <taggar>23</taggar>
-    <ålder>4</ålder>
-  </jaktlag>
-  <jaktlag>
     <jaktlagsnamn>Prickskyttarna</jaktlagsnamn>
-    <namn>Tesssst</namn>
-    <datum>11/30/2013</datum>
-    <kön>Hane</kön>
-    <vikt>700</vikt>
-    <taggar>90</taggar>
-    <ålder>30</ålder>
+    <jaktledare>
+      <namn>Roger Ollson</namn>
+      <email>roger@hotmail.com</email>
+      <telefon>074354645</telefon>
+    </jaktledare>
+    <rapportör>
+      <namn>RapporteringsConny</namn>
+      <användarnamn>testlogin</användarnamn>
+      <lösenord>123</lösenord>
+    </rapportör>
     <avskutning>
       <namn>Ove</namn>
       <datum>32424332</datum>
       <kön>Hane</kön>
-      <vikt>56560</vikt>
-      <taggar>324</taggar>
-      <ålder>123</ålder>
+      <vikt>560</vikt>
+      <taggar>24</taggar>
+      <ålder>2</ålder>
     </avskutning>
     <avskutning>
       <namn>Jenny skarpbössa</namn>
       <datum>234243</datum>
-      <kön>23423</kön>
-      <vikt>3234</vikt>
-      <taggar>234234</taggar>
-      <ålder>234234</ålder>
+      <kön>Hona</kön>
+      <vikt>334</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
     </avskutning>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Misskyttarna</jaktlagsnamn>
-    <namn>ooooo</namn>
-    <datum>ooooo</datum>
-    <kön>ooooo</kön>
-    <vikt>ooooo</vikt>
-    <taggar>ooooo</taggar>
-    <ålder>ooooo</ålder>
-  </jaktlag>
-  <jaktlag id="TEST">
-    <namn>asdf</namn>
-    <datum>asdf</datum>
-    <kön>asdf</kön>
-    <vikt>asdf</vikt>
-    <taggar>asdf</taggar>
-    <ålder>asdf</ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Putte</jaktlagsnamn>
-    <namn>Putte</namn>
-    <datum>Putte</datum>
-    <kön>Putte</kön>
-    <vikt>Putte</vikt>
-    <taggar>Putte</taggar>
-    <ålder>Putte</ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Putte</jaktlagsnamn>
-    <namn></namn>
-    <datum></datum>
-    <kön></kön>
-    <vikt></vikt>
-    <taggar></taggar>
-    <ålder></ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>0</jaktlagsnamn>
-    <namn>Rikard</namn>
-    <datum>Rikard</datum>
-    <kön>Rikard</kön>
-    <vikt>Rikard</vikt>
-    <taggar>Rikard</taggar>
-    <ålder>Rikard</ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>2</jaktlagsnamn>
-    <namn>sdfgsfdg</namn>
-    <datum>sdfgsfdg</datum>
-    <kön>sdfgsfdg</kön>
-    <vikt>sdfgsfdg</vikt>
-    <taggar>sdfgsfdg</taggar>
-    <ålder>sdfgsfdg</ålder>
-  </jaktlag>
-  <jaktlag>
-    <jaktlagsnamn>Ocke jaktlag</jaktlagsnamn>
-    <namn>test</namn>
-    <datum>test</datum>
-    <kön></kön>
-    <vikt></vikt>
-    <taggar></taggar>
-    <ålder></ålder>
   </jaktlag>
 </jakt>

@@ -73,8 +73,8 @@
     <Content Include="login.aspx">
       <BrowseToURL>~/login.aspx</BrowseToURL>
     </Content>
-    <Content Include="kontakt.aspx">
-      <BrowseToURL>~/kontakt.aspx</BrowseToURL>
+    <Content Include="andra_uppgifter.aspx">
+      <BrowseToURL>~/andra_uppgfter.aspx</BrowseToURL>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -121,12 +121,12 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="kontakt.aspx.cs">
-      <DependentUpon>kontakt.aspx</DependentUpon>
+    <Compile Include="andra_uppgifter.aspx.cs">
+      <DependentUpon>andra_uppgifter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="kontakt.aspx.designer.cs">
-      <DependentUpon>kontakt.aspx</DependentUpon>
+    <Compile Include="andra_uppgifter.aspx.designer.cs">
+      <DependentUpon>andra_uppgifter.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
