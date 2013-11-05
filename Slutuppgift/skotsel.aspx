@@ -2,13 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <h2>Älgrapportering</h2>
         <p>            
-            <asp:TextBox ID="jaktlag" placeholder="Jaktlagsnamn" runat="server"></asp:TextBox>
+            <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
         </p>
         <p>            
-           <asp:TextBox ID="shootername" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>
+           <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>
         </p>
         <p>                        
-            <asp:TextBox ID="date" runat="server" placeholder="Datum"></asp:TextBox>
+            <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>
         </p>
         <p>            
             <asp:TextBox ID="kön" runat="server" placeholder="Kön"></asp:TextBox>

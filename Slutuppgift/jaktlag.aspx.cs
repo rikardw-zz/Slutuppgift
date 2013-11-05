@@ -19,24 +19,37 @@ namespace Slutuppgift
             path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml");
             if (!IsPostBack)
             {
-                LaddaAlbum(HämtaArtister());
+                LaddaJaktlag(HämtaJaktlag());
             }        
         }
-        void LaddaAlbum(List<string> lista)
+        void LaddaJaktlag(List<string> lista)
         {
             foreach (string s in lista)
                 jaktlagInfo.Items.Add(s);
         }
-        protected List<string> HämtaArtister()
-        {
-            XElement jakt= XElement.Load(path);
+        
 
-            var albumSamling = (from a in jakt.Elements("jaktlag").Elements("jaktlagsnamn")
-                                
-                                select (string)a).Distinct().ToList<string>();
-            return albumSamling;
+
+            protected List<string> HämtaJaktlag()
+        {
+            XElement älgskötselområde = XElement.Load(path);
+
+            var olikaJaktlag = (from a in älgskötselområde.Elements("jaktlag").Elements("jaktlagsnamn")
+                        select (string)a).Distinct().ToList<string>();
+            return olikaJaktlag;
         }
 
+        /*     
+          protected List<string> HämtaArtister()
+          
+          {
+           XElement jakt= XElement.Load(path);
+
+           var albumSamling = (from a in jakt.Elements("jaktlag").Elements("jaktlagsnamn")
+                                
+                               select (string)a).Distinct().ToList<string>();
+           return albumSamling;
+       }*/
 
     }
 }

@@ -13,31 +13,31 @@ namespace Slutuppgift {
     public partial class WebForm3 {
         
         /// <summary>
-        /// jaktlag control.
+        /// lbjaktlag control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox jaktlag;
+        protected global::System.Web.UI.WebControls.ListBox lbjaktlag;
         
         /// <summary>
-        /// shootername control.
+        /// skytt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox shootername;
+        protected global::System.Web.UI.WebControls.TextBox skytt;
         
         /// <summary>
-        /// date control.
+        /// datum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox date;
+        protected global::System.Web.UI.WebControls.TextBox datum;
         
         /// <summary>
         /// kön control.

@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
@@ -10,30 +13,73 @@ namespace Slutuppgift
 {
     public partial class WebForm3 : System.Web.UI.Page
     {
+        private string path = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml");
+            if (!IsPostBack)
+            {
+                LaddaJaktlag(HämtaJaktlag());
+            }        
         }
 
-        protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)
+        protected List<string> HämtaJaktlag()
         {
+            XElement älgskötselområde = XElement.Load(path);
 
+            var olikaJaktlag = (from a in älgskötselområde.Elements("jaktlag").Elements("jaktlagsnamn")
+                                select (string)a).Distinct().ToList<string>();
+            return olikaJaktlag;
         }
-
-        protected void TreeView1_SelectedNodeChanged1(object sender, EventArgs e)
+        void LaddaJaktlag(List<string> lista)
         {
-
+            foreach (string s in lista)
+                lbjaktlag.Items.Add(s);
         }
+
+        private void LäggTillAvskutning(string jaktlagsnamn, string avskutning)
+        {
+            XElement älgskötselområde = XElement.Load(path);
+
+            var aktuelltAvskutning = (from a in älgskötselområde.Elements("jaktlag")
+                                      where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                      select a).Single();
+  //          ((XElement)aktuelltAvskutning).Add(new XElement("avskutning", avskutning));
+            
+                        ((XElement)aktuelltAvskutning).Add(new XElement("avskutning",
+                            new XElement("namn", skytt.Text),
+                            new XElement("datum", datum.Text),
+                            new XElement("kön", kön.Text),
+                            new XElement("vikt", vikt.Text),
+                            new XElement("taggar", taggar.Text),
+                            new XElement("ålder", ålder.Text)));
+
+            älgskötselområde.Save(path);
+        }
+
+      
 
         protected void comfirm_Click(object sender, EventArgs e)
         {
-          
+
+            string jaktlag = lbjaktlag.SelectedItem.ToString();
+            string skyttnamn = skytt.Text;
+
+            LäggTillAvskutning(jaktlag, skyttnamn);
+        }
+
+
+
+
+            /*
+
             XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));
 
             xelement.Add(new XElement("jaktlag",
-        new XElement("jaktlagsnamn", jaktlag.Text),
-                new XElement("namn", shootername.Text),
-                new XElement("datum", date.Text),
+   //             new XElement("jaktlagsnamn", jaktlag.Text),
+                new XElement("jaktlagsnamn", lbjaktlag.SelectedItem),
+                new XElement("namn", skytt.Text),
+                new XElement("datum", datum.Text),
                 new XElement("kön", kön.Text),
                 new XElement("vikt", vikt.Text),
                 new XElement("taggar", taggar.Text),
@@ -50,6 +96,6 @@ namespace Slutuppgift
                 new XElement("ålder", ålder.Text)
                 ));
                 xelement.Save((Server.MapPath("Jaktlag.xml")));   */
-        }
+        
     }
 }

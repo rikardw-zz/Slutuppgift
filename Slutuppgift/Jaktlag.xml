@@ -8,6 +8,7 @@
     <vikt>234</vikt>
     <taggar>32</taggar>
     <ålder>3</ålder>
+    <avskutning>skottola</avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Ocke jaktlag</jaktlagsnamn>
@@ -35,6 +36,22 @@
     <vikt>700</vikt>
     <taggar>90</taggar>
     <ålder>30</ålder>
+    <avskutning>
+      <namn>Ove</namn>
+      <datum>32424332</datum>
+      <kön>Hane</kön>
+      <vikt>56560</vikt>
+      <taggar>324</taggar>
+      <ålder>123</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Jenny skarpbössa</namn>
+      <datum>234243</datum>
+      <kön>23423</kön>
+      <vikt>3234</vikt>
+      <taggar>234234</taggar>
+      <ålder>234234</ålder>
+    </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Misskyttarna</jaktlagsnamn>
@@ -61,5 +78,41 @@
     <vikt>Putte</vikt>
     <taggar>Putte</taggar>
     <ålder>Putte</ålder>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Putte</jaktlagsnamn>
+    <namn></namn>
+    <datum></datum>
+    <kön></kön>
+    <vikt></vikt>
+    <taggar></taggar>
+    <ålder></ålder>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>0</jaktlagsnamn>
+    <namn>Rikard</namn>
+    <datum>Rikard</datum>
+    <kön>Rikard</kön>
+    <vikt>Rikard</vikt>
+    <taggar>Rikard</taggar>
+    <ålder>Rikard</ålder>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>2</jaktlagsnamn>
+    <namn>sdfgsfdg</namn>
+    <datum>sdfgsfdg</datum>
+    <kön>sdfgsfdg</kön>
+    <vikt>sdfgsfdg</vikt>
+    <taggar>sdfgsfdg</taggar>
+    <ålder>sdfgsfdg</ålder>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Ocke jaktlag</jaktlagsnamn>
+    <namn>test</namn>
+    <datum>test</datum>
+    <kön></kön>
+    <vikt></vikt>
+    <taggar></taggar>
+    <ålder></ålder>
   </jaktlag>
 </jakt>
