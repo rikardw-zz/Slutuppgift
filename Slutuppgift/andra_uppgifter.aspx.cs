@@ -19,5 +19,17 @@ namespace Slutuppgift
         {
               
         }
+
+        static void changeInfo() {
+         /*                         
+            XElement personer = XElement.Load("personer.xml");
+
+            XElement person = (from p in personer.Elements("person")
+                               where p.Element("namn".Value == "Jörgen"
+                               select p).First();
+            person.Element("efternman").Value = "Olsson";
+            personer.Save("personer.xml");  */
+                                   
+        }
     }
 }

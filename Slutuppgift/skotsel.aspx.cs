@@ -44,7 +44,6 @@ namespace Slutuppgift
             var aktuelltAvskutning = (from a in älgskötselområde.Elements("jaktlag")
                                       where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
                                       select a).Single();
-  //          ((XElement)aktuelltAvskutning).Add(new XElement("avskutning", avskutning));
             
                         ((XElement)aktuelltAvskutning).Add(new XElement("avskutning",
                             new XElement("namn", skytt.Text),
@@ -53,12 +52,17 @@ namespace Slutuppgift
                             new XElement("vikt", vikt.Text),
                             new XElement("taggar", taggar.Text),
                             new XElement("ålder", ålder.Text)));
-
+                            
             älgskötselområde.Save(path);
+          /*  skytt.Text = String.Empty;
+            datum.Text = String.Empty;
+            kön.Text = String.Empty;
+            vikt.Text = String.Empty;
+            taggar.Text = String.Empty;
+            ålder.Text = String.Empty;   
+          */ 
         }
-
       
-
         protected void comfirm_Click(object sender, EventArgs e)
         {
 
@@ -66,36 +70,6 @@ namespace Slutuppgift
             string skyttnamn = skytt.Text;
 
             LäggTillAvskutning(jaktlag, skyttnamn);
-        }
-
-
-
-
-            /*
-
-            XElement xelement = XElement.Load(Server.MapPath("Jaktlag.xml"));
-
-            xelement.Add(new XElement("jaktlag",
-   //             new XElement("jaktlagsnamn", jaktlag.Text),
-                new XElement("jaktlagsnamn", lbjaktlag.SelectedItem),
-                new XElement("namn", skytt.Text),
-                new XElement("datum", datum.Text),
-                new XElement("kön", kön.Text),
-                new XElement("vikt", vikt.Text),
-                new XElement("taggar", taggar.Text),
-                new XElement("ålder", ålder.Text)
-        ));
-            xelement.Save((Server.MapPath("Jaktlag.xml")));   
-       
-  /*           xelement.Add(new XElement("jaktlag", new XAttribute("id", jaktlag.Text),
-                new XElement("namn", shootername.Text),
-                new XElement("datum", date.Text),
-                new XElement("kön", kön.Text),
-                new XElement("vikt", vikt.Text),
-                new XElement("taggar", taggar.Text),
-                new XElement("ålder", ålder.Text)
-                ));
-                xelement.Save((Server.MapPath("Jaktlag.xml")));   */
-        
+        }    
     }
 }

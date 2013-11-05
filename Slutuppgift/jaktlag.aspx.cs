@@ -38,7 +38,7 @@ namespace Slutuppgift
                         select (string)a).Distinct().ToList<string>();
             return olikaJaktlag;
         }
-
+/*
             protected void jaktlagInfo_SelectedIndexChanged(object sender, EventArgs e)
             {
             if (!IsPostBack)
@@ -66,7 +66,7 @@ namespace Slutuppgift
                                      select (string)(a.Element("titel"))).ToList<string>();
                 return aktuellaAlbum;
             }
-
+        */
 
     }
 }
