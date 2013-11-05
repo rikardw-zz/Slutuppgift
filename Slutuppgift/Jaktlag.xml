@@ -28,5 +28,87 @@
       <taggar>0</taggar>
       <ålder>0</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Jörgen</namn>
+      <datum>029397</datum>
+      <kön>Hona</kön>
+      <vikt>10</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Jörgen</namn>
+      <datum>029397</datum>
+      <kön>Hona</kön>
+      <vikt>10</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
+    </avskutning>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
+    <jaktledare>
+      <namn>Anders Petterzon</namn>
+      <email>anders@hotmail.com</email>
+      <telefon>074355645</telefon>
+    </jaktledare>
+    <rapportör>
+      <namn>RapporteringsBertil</namn>
+      <användarnamn>testlogin2</användarnamn>
+      <lösenord>123</lösenord>
+    </rapportör>
+    <avskutning>
+      <namn>Sven</namn>
+      <datum>32424332</datum>
+      <kön>Hane</kön>
+      <vikt>560</vikt>
+      <taggar>24</taggar>
+      <ålder>2</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Olle</namn>
+      <datum>Ollson</datum>
+      <kön>Båda</kön>
+      <vikt>0</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
+    </avskutning>
+  </jaktlag>
+  <jaktlag>
+    <jaktlagsnamn>Moosehunters</jaktlagsnamn>
+    <jaktledare>
+      <namn>Svempa Ollson</namn>
+      <email>anders@hotmail.com</email>
+      <telefon>074355645</telefon>
+    </jaktledare>
+    <rapportör>
+      <namn>RapporteringsNils</namn>
+      <användarnamn>testlogin2</användarnamn>
+      <lösenord>123</lösenord>
+    </rapportör>
+    <avskutning>
+      <namn>Åke</namn>
+      <datum>324332</datum>
+      <kön>Hane</kön>
+      <vikt>560</vikt>
+      <taggar>24</taggar>
+      <ålder>2</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Åke</namn>
+      <datum>324332</datum>
+      <kön>Hane</kön>
+      <vikt>560</vikt>
+      <taggar>24</taggar>
+      <ålder>2</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Åke</namn>
+      <datum>324332</datum>
+      <kön>Hane</kön>
+      <vikt>560</vikt>
+      <taggar>24</taggar>
+      <ålder>2</ålder>
+    </avskutning>
   </jaktlag>
 </jakt>
