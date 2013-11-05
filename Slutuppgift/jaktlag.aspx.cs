@@ -39,17 +39,34 @@ namespace Slutuppgift
             return olikaJaktlag;
         }
 
-        /*     
-          protected List<string> HämtaArtister()
-          
-          {
-           XElement jakt= XElement.Load(path);
+            protected void jaktlagInfo_SelectedIndexChanged(object sender, EventArgs e)
+            {
+            if (!IsPostBack)
+            {
+                HämtaJaktlag();
+            }
+            string valtJaktlag = jaktlagInfo.SelectedItem.ToString();
+            XElement
 
-           var albumSamling = (from a in jakt.Elements("jaktlag").Elements("jaktlagsnamn")
-                                
-                               select (string)a).Distinct().ToList<string>();
-           return albumSamling;
-       }*/
+
+
+         
+
+            //skriv in if listbox
+
+            
+
+        }
+            public List<string> HämtaJaktledare(string jaktledare)
+            {
+                XElement jaktlag = XElement.Load(path);
+
+                var aktuellJaktledare = (from a in jaktlag.Elements("jaktledare")
+                                     where (string)a.Element("jaktledare") == jaktledare
+                                     select (string)(a.Element("titel"))).ToList<string>();
+                return aktuellaAlbum;
+            }
+
 
     }
 }
