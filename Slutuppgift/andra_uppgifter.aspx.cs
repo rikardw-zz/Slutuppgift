@@ -99,7 +99,6 @@ namespace Slutuppgift
         {
             XElement älgskötselområde = XElement.Load(path);
 
-            //denna som är tokig, 
             XElement aktuellJaktledare = (from a in älgskötselområde.Elements("jaktlag")
                                           where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
                                           select a.Element("jaktledare")).Single();
@@ -107,7 +106,30 @@ namespace Slutuppgift
            aktuellJaktledare.SetElementValue("namn", txtJaktledare.Text);
            aktuellJaktledare.SetElementValue("email", txtEpostJaktledare.Text);
            aktuellJaktledare.SetElementValue("telefon", txtTelefonJaktledare.Text);
+           
             älgskötselområde.Save(path);
+        }
+
+        private void UppdateraRapportör(string jaktlagsnamn)
+        {
+            XElement jaktområde = XElement.Load(path);
+
+            XElement aktuellRapportör = (from a in jaktområde.Elements("jaktlag")
+                                         where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                         select a.Element("rapportör")).Single();
+
+            aktuellRapportör.SetElementValue("namn", txtRapportör.Text);
+            aktuellRapportör.SetElementValue("email", txtEpostRapportör.Text);
+            aktuellRapportör.SetElementValue("telefon", txtTelefonRapportör.Text);
+
+            jaktområde.Save(path);
+
+        }
+
+        protected void submitRapportör_Click(object sender, EventArgs e)
+        {
+            string jaktlag = jaktledare.SelectedItem.ToString();
+            UppdateraRapportör(jaktlag);
         }
 
     }

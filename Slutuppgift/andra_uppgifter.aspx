@@ -27,7 +27,7 @@
     <br />
     <asp:Button ID="submitJaktledare" runat="server" Text="Uppdatera" OnClick="submitJaktledare_Click" />
 
-    <asp:Button ID="submitRapportör" runat="server" Text="Uppdatera" style="margin-left: 265px" />
+    <asp:Button ID="submitRapportör" runat="server" Text="Uppdatera" style="margin-left: 265px" OnClick="submitRapportör_Click" />
 
     <br />
     <br />

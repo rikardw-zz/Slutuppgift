@@ -50,14 +50,14 @@
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
     <jaktledare>
-      <namn>Anders Petterzon</namn>
-      <email>anders@hotmail.com</email>
-      <telefon>074355645</telefon>
-    </jaktledare>
-    <rapportör>
-      <namn>RapporteringsBertil</namn>
+      <namn>RappBerit</namn>
       <email>Rapportbertan@hotmail.com</email>
       <telefon>074987987</telefon>
+    </jaktledare>
+    <rapportör>
+      <namn>skjutarn</namn>
+      <email>R@hotmail.com</email>
+      <telefon>074111111</telefon>
       <användarnamn>testlogin2</användarnamn>
       <lösenord>123</lösenord>
     </rapportör>
