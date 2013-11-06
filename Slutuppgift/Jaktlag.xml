@@ -3,9 +3,9 @@
   <jaktlag>
     <jaktlagsnamn>Prickskyttarna</jaktlagsnamn>
     <jaktledare>
-      <namn>Testjonny</namn>
-      <email>Löptt@gmail.com</email>
-      <telefon>081234567</telefon>
+      <namn>Jonnpan</namn>
+      <email>Skottfot@gmail.com</email>
+      <telefon>234</telefon>
     </jaktledare>
     <rapportör>
       <namn>RapporteringsConny</namn>
@@ -18,8 +18,8 @@
       <namn>Ove</namn>
       <datum>32424332</datum>
       <kön>Hane</kön>
-      <vikt>560</vikt>
-      <taggar>12</taggar>
+      <vikt>160</vikt>
+      <taggar>10</taggar>
       <ålder>2</ålder>
     </avskutning>
     <avskutning>
@@ -28,15 +28,15 @@
       <kön>Hona</kön>
       <vikt>334</vikt>
       <taggar>0</taggar>
-      <ålder>0</ålder>
+      <ålder>5</ålder>
     </avskutning>
     <avskutning>
       <namn>Jörgen</namn>
       <datum>029397</datum>
       <kön>Hona</kön>
-      <vikt>10</vikt>
+      <vikt>120</vikt>
       <taggar>0</taggar>
-      <ålder>0</ålder>
+      <ålder>1</ålder>
     </avskutning>
     <avskutning>
       <namn>Bosse</namn>
@@ -44,20 +44,20 @@
       <kön>Hona</kön>
       <vikt>100</vikt>
       <taggar>0</taggar>
-      <ålder>0</ålder>
+      <ålder>1</ålder>
     </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
     <jaktledare>
-      <namn>RappBerit</namn>
-      <email>Rapportbertan@hotmail.com</email>
-      <telefon>074987987</telefon>
+      <namn>Anders Petterson</namn>
+      <email>anders@hotmail.com</email>
+      <telefon>074355645</telefon>
     </jaktledare>
     <rapportör>
-      <namn>skjutarn</namn>
-      <email>R@hotmail.com</email>
-      <telefon>074111111</telefon>
+      <namn>RapporteringsBertil</namn>
+      <email>Rapportbertan@hotmail.com</email>
+      <telefon>074987987</telefon>
       <användarnamn>testlogin2</användarnamn>
       <lösenord>123</lösenord>
     </rapportör>
@@ -65,15 +65,15 @@
       <namn>Sven</namn>
       <datum>32424332</datum>
       <kön>Hona</kön>
-      <vikt>50</vikt>
-      <taggar>24</taggar>
+      <vikt>150</vikt>
+      <taggar>0</taggar>
       <ålder>2</ålder>
     </avskutning>
     <avskutning>
       <namn>Olle</namn>
       <datum>Ollson</datum>
-      <kön>Hona</kön>
-      <vikt>0</vikt>
+      <kön>Hane</kön>
+      <vikt>10</vikt>
       <taggar>0</taggar>
       <ålder>0</ålder>
     </avskutning>
@@ -86,7 +86,7 @@
       <telefon>074353333</telefon>
     </jaktledare>
     <rapportör>
-      <namn>Tjornvenaf</namn>
+      <namn>RapporteringsNils</namn>
       <email>oljaochkrom@hotmail.com</email>
       <telefon>08-1234567</telefon>
       <användarnamn>testlogin2</användarnamn>
@@ -96,17 +96,17 @@
       <namn>Åke</namn>
       <datum>324332</datum>
       <kön>Hane</kön>
-      <vikt>311</vikt>
-      <taggar>24</taggar>
-      <ålder>2</ålder>
+      <vikt>121</vikt>
+      <taggar>4</taggar>
+      <ålder>7</ålder>
     </avskutning>
     <avskutning>
       <namn>Åke</namn>
       <datum>324332</datum>
       <kön>Hane</kön>
       <vikt>560</vikt>
-      <taggar>24</taggar>
-      <ålder>0</ålder>
+      <taggar>20</taggar>
+      <ålder>3</ålder>
     </avskutning>
     <avskutning>
       <namn>Åke</namn>

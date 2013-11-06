@@ -101,8 +101,8 @@ namespace Slutuppgift
         {
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
-            var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") > 0
+            var xmlValue = (from a in xmlDoc.Descendants("avskutning")                            
+                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hane"
                             select (a.Element("Hane"))).Count();
             return xmlValue;
         }
@@ -112,7 +112,7 @@ namespace Slutuppgift
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") > 0
+                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hona"
                             select (a.Element("Hona"))).Count();
             return xmlValue;
         }
@@ -122,7 +122,7 @@ namespace Slutuppgift
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") == 0
+                            where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hane"
                             select (a.Element("Hane"))).Count();
             return xmlValue;
         }
@@ -131,7 +131,7 @@ namespace Slutuppgift
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") == 0
+                            where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hona"
                             select (a.Element("Hona"))).Count();
             return xmlValue;
         }

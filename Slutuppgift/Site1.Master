@@ -17,7 +17,7 @@
                 <asp:LoginStatus ID="LoginStatus1" runat="server" />
             </div>
 			<h1>Älgskjutarsidan</h1>
-				<ul><li><a href="start.aspx">Start</a></li>
+				<ul><li><a href="start.aspx">Statistik</a></li>
 				<li><a href="jaktlag.aspx">Jaktlag</a></li>
 				<li><a href="skotsel.aspx">Rapportering</a></li>
 				<li><a href="andra_uppgifter.aspx">Ändra uppgift</a></li>

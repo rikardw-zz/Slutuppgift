@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <h2>Uppdatera uppgifter</h2>
     <asp:DropDownList runat="server" ID="jaktledare" Width="300px" AutoPostBack="True" OnSelectedIndexChanged="jaktledare_SelectedIndexChanged">                        
-        <asp:ListItem Text="" Value="--------------" />
+        
     </asp:DropDownList>  
 
     <br />

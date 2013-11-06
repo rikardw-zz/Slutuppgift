@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="jaktlag.aspx.cs" Inherits="Slutuppgift.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Uppgifter för jaktledare</h2>
+    <h2>Uppgifter</h2>
     <asp:DropDownList runat="server" ID="jaktlagInfo" Width="300px" AutoPostBack="True" OnSelectedIndexChanged="jaktlagInfo_SelectedIndexChanged">                        
-        <asp:ListItem Text="" Value="--------------" />
+        
     </asp:DropDownList>   
     <br />
 
@@ -17,5 +17,15 @@
     <br />
     <asp:Label ID="epost" runat="server" Text="E-post:"></asp:Label>
     <asp:Label ID="getepost" runat="server" Text="-"></asp:Label>
+    <br />
+    <br />
+    <asp:Label ID="falltaalghanar" runat="server" Text="Tjurar:"></asp:Label>
+    <asp:Label ID="getfalldaalghanar" runat="server" Text="-"></asp:Label>
+    <br />
+    <asp:Label ID="falldaälghonor" runat="server" Text="Kvigor:"></asp:Label>
+    <asp:Label ID="getfalldaalghonor" runat="server" Text="-"></asp:Label>
+    <br />  
+    <asp:Label ID="falldakalvar" runat="server" Text="Kalvar:"></asp:Label>
+    <asp:Label ID="getfalldakalvar" runat="server" Text="-"></asp:Label>
     <br />
 </asp:Content>
