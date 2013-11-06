@@ -19,7 +19,7 @@
       <datum>32424332</datum>
       <kön>Hane</kön>
       <vikt>560</vikt>
-      <taggar>24</taggar>
+      <taggar>12</taggar>
       <ålder>2</ålder>
     </avskutning>
     <avskutning>
@@ -106,14 +106,14 @@
       <kön>Hane</kön>
       <vikt>560</vikt>
       <taggar>24</taggar>
-      <ålder>2</ålder>
+      <ålder>0</ålder>
     </avskutning>
     <avskutning>
       <namn>Åke</namn>
       <datum>324332</datum>
       <kön>Hane</kön>
       <vikt>500</vikt>
-      <taggar>24</taggar>
+      <taggar>14</taggar>
       <ålder>2</ålder>
     </avskutning>
   </jaktlag>

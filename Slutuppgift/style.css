@@ -11,7 +11,7 @@
 
 h2 {	
     font-family: Arial;
-	font-variant: small-caps;
+	font-variant: normal;
 	letter-spacing: 2px;
 	font-size: 24px;
     margin: 0px;
@@ -21,7 +21,7 @@ h2 {
 } 
 
 p {
-		
+    font-size: 14px;		
 }
 
 body{
@@ -57,14 +57,17 @@ body{
 	color: black;	    
 }
 
-.links{
-	margin: auto;
-	width: 600px;
-	height: 25px;
-	border-style: solid;
-	border-width: 3px;
-	
+
+.statsname {
+    height: 500px;    
+    float:left;
+
 }
+.statsinfo {
+    height: 500px;    
+    float:left;
+}
+
 
 .mainwindow{
 	background-image:url('bakgrund3.jpg');
