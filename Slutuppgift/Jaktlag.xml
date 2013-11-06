@@ -3,12 +3,14 @@
   <jaktlag>
     <jaktlagsnamn>Prickskyttarna</jaktlagsnamn>
     <jaktledare>
-      <namn>Roger Ollson</namn>
-      <email>roger@hotmail.com</email>
-      <telefon>074354645</telefon>
+      <namn>Jonnpan</namn>
+      <email>Skottfot@gmail.com</email>
+      <telefon>234</telefon>
     </jaktledare>
     <rapportör>
       <namn>RapporteringsConny</namn>
+      <email>roger@hotmail.com</email>
+      <telefon>074354645</telefon>
       <användarnamn>testlogin</användarnamn>
       <lösenord>123</lösenord>
     </rapportör>
@@ -54,6 +56,8 @@
     </jaktledare>
     <rapportör>
       <namn>RapporteringsBertil</namn>
+      <email>Rapportbertan@hotmail.com</email>
+      <telefon>074987987</telefon>
       <användarnamn>testlogin2</användarnamn>
       <lösenord>123</lösenord>
     </rapportör>
@@ -83,6 +87,8 @@
     </jaktledare>
     <rapportör>
       <namn>RapporteringsNils</namn>
+      <email>oljaochkrom@hotmail.com</email>
+      <telefon>08-1234567</telefon>
       <användarnamn>testlogin2</användarnamn>
       <lösenord>123</lösenord>
     </rapportör>
