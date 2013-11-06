@@ -31,15 +31,6 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtJaktledare;
         
         /// <summary>
-        /// txtRapportör control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRapportör;
-        
-        /// <summary>
         /// txtEpostJaktledare control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEpostJaktledare;
-        
-        /// <summary>
-        /// txtEpostRapportör control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEpostRapportör;
         
         /// <summary>
         /// txtTelefonJaktledare control.
@@ -67,15 +49,6 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtTelefonJaktledare;
         
         /// <summary>
-        /// txtTelefonRapportör control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefonRapportör;
-        
-        /// <summary>
         /// submitJaktledare control.
         /// </summary>
         /// <remarks>
@@ -83,6 +56,33 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submitJaktledare;
+        
+        /// <summary>
+        /// txtRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtRapportör;
+        
+        /// <summary>
+        /// txtEpostRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEpostRapportör;
+        
+        /// <summary>
+        /// txtTelefonRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonRapportör;
         
         /// <summary>
         /// submitRapportör control.
