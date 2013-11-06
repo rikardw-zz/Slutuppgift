@@ -60,7 +60,7 @@
     <avskutning>
       <namn>Sven</namn>
       <datum>32424332</datum>
-      <kön>Hane</kön>
+      <kön>Hona</kön>
       <vikt>50</vikt>
       <taggar>24</taggar>
       <ålder>2</ålder>
@@ -68,7 +68,7 @@
     <avskutning>
       <namn>Olle</namn>
       <datum>Ollson</datum>
-      <kön>Båda</kön>
+      <kön>Hona</kön>
       <vikt>0</vikt>
       <taggar>0</taggar>
       <ålder>0</ålder>
@@ -90,7 +90,7 @@
       <namn>Åke</namn>
       <datum>324332</datum>
       <kön>Hane</kön>
-      <vikt>560</vikt>
+      <vikt>311</vikt>
       <taggar>24</taggar>
       <ålder>2</ålder>
     </avskutning>
@@ -106,7 +106,7 @@
       <namn>Åke</namn>
       <datum>324332</datum>
       <kön>Hane</kön>
-      <vikt>560</vikt>
+      <vikt>500</vikt>
       <taggar>24</taggar>
       <ålder>2</ålder>
     </avskutning>

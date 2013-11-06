@@ -15,19 +15,17 @@ namespace Slutuppgift
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          snittvikt.Text = HämtaInfo().ToString();
+          snittvikthanar.Text = HämtaViktHane().ToString();
         }
 
-        protected double HämtaInfo()
+        protected double HämtaViktHane()
         {
+            
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
-            var xmlValue = (from prod in xmlDoc.Descendants("avskutning")
-                            select
-                            (
-                                        int.Parse(prod.Element("vikt").Value)
-                            )).Average();
-
+            var xmlValue = (from a in xmlDoc.Descendants("avskutning")
+                            where (string)a.Element("kön") == "Hane"
+                            select (double.Parse(a.Element("vikt").Value))).Average();
             return xmlValue;
         }
     }
