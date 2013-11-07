@@ -13,7 +13,7 @@
             <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>
         </p>
         <p>            
-            <asp:TextBox ID="kön" runat="server" placeholder="Kön"></asp:TextBox>
+            <asp:TextBox ID="kön" runat="server" style="text-transform:capitalize" placeholder="Kön"></asp:TextBox>
         </p>
         <p>          
             <asp:TextBox ID="vikt" runat="server" placeholder="Vikt (kilo)"></asp:TextBox>
