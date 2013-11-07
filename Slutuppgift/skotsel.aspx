@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-      <h2>Älgrapportering</h2>       
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>     
       <h2>Rapportering</h2>       
             Här kan du rapportera skutna älgar <p/>
             <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
