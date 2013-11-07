@@ -8,13 +8,14 @@ using System.Web.Hosting;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
-using System.Web.Security; //möjliggör inloggning
+using System.Web.Security;
 
 
 namespace Slutuppgift
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
+
        
 
         protected void Page_Load(object sender, EventArgs e)  
@@ -24,7 +25,13 @@ namespace Slutuppgift
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            if (name.Text == "Admin" && password.Text == "123")
+            XElement jaktlag = XElement.Load(Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml"));
+            var xmlValue = (from a in jaktlag.Descendants("rapportör")
+                                          where (string)a.Element("användarnamn") == name.Text && (string)a.Element("lösenord") == password.Text
+                                          select a.Element("rapportör")).Count();
+
+
+            if (xmlValue > 0)
             {
                 FormsAuthentication.RedirectFromLoginPage(name.Text, false);             
             }
