@@ -8,5 +8,6 @@
         </p>
         <p>
             <asp:Button ID="submit" runat="server" Text="Skicka uppgifter" OnClick="submit_Click" />
+            <asp:Label ID="error" runat="server" Text="" style="color: #FF0000"></asp:Label>
         </p>
 </asp:Content>

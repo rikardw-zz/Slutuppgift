@@ -24,9 +24,13 @@ namespace Slutuppgift
 
         protected void submit_Click(object sender, EventArgs e)
         {
-
-            if (name.Text == "Admin" && password.Text == "123"){
+            if (name.Text == "Admin" && password.Text == "123")
+            {
                 FormsAuthentication.RedirectFromLoginPage(name.Text, false);             
+            }
+            else
+            {
+                error.Text = "Du har angett fel användarnamn eller lösenord.";
             }
         }
 
