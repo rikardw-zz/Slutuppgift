@@ -14,7 +14,7 @@
 		<form id="form1" runat="server">
 		<div class="container">
             <div class="login">
-                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                <asp:LoginStatus ID="LoginStatus1" LoginText="Logga in" LogoutText="Logga ut" runat="server"  />
             </div>
 			<h1>Älgskjutarsidan</h1>
 				<ul><li><a href="start.aspx">Statistik</a></li>
