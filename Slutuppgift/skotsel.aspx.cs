@@ -63,7 +63,7 @@ namespace Slutuppgift
           */ 
         }
       
-        protected void comfirm_Click(object sender, EventArgs e)
+        protected void submit_Click(object sender, EventArgs e)
         {
 
             string jaktlag = lbjaktlag.SelectedItem.ToString();

@@ -46,6 +46,14 @@
       <taggar>0</taggar>
       <ålder>1</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Test</namn>
+      <datum>2013-11-07</datum>
+      <kön>Hane</kön>
+      <vikt>385</vikt>
+      <taggar>500</taggar>
+      <ålder>3</ålder>
+    </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
@@ -114,6 +122,14 @@
       <kön>Hane</kön>
       <vikt>500</vikt>
       <taggar>14</taggar>
+      <ålder>2</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Mr Gunner</namn>
+      <datum>2013-11-07</datum>
+      <kön>Hane</kön>
+      <vikt>350</vikt>
+      <taggar>18</taggar>
       <ålder>2</ålder>
     </avskutning>
   </jaktlag>
