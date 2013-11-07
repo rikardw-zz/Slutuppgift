@@ -113,7 +113,7 @@ text-decoration:none;
 text-transform:uppercase;
 }
 
-ul li a:hover, ul li a:active
+ul li a:hover
 {
 background-color:#99603A;
 }

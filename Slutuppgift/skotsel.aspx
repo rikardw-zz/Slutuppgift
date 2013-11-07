@@ -22,6 +22,7 @@
         <p>            
             <asp:TextBox ID="taggar" runat="server" placeholder="Antal taggar"></asp:TextBox>
         </p>
+       
         <p>            
             <asp:TextBox ID="ålder" runat="server" placeholder="Ålder" ></asp:TextBox>
         </p>
