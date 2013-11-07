@@ -132,5 +132,13 @@
       <taggar>18</taggar>
       <ålder>2</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Jägaranders</namn>
+      <datum>2013-11-07</datum>
+      <kön>hona</kön>
+      <vikt>500</vikt>
+      <taggar>18</taggar>
+      <ålder>3</ålder>
+    </avskutning>
   </jaktlag>
 </jakt>
