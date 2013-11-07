@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="skotsel.aspx.cs" Inherits="Slutuppgift.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <h2>Älgrapportering</h2>
-        <p>            
+      <h2>Rapportering</h2>
+        <p/>    
+            Här kan du rapportera skutna älgar <p/>
             <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
         </p>
         <p>            

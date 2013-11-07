@@ -21,7 +21,7 @@ namespace Slutuppgift
             if (!IsPostBack)
             {
                 LaddaJaktlag(HämtaJaktlag());
-            }        
+            }                               
         }
 
         void LaddaJaktlag(List<string> lista)
@@ -41,36 +41,44 @@ namespace Slutuppgift
 
         public List<string> HämtaJaktledare(string jaktlagsnamn)
         {
-            XElement jaktlag = XElement.Load(path);
-            //har hela jaktlagselement,består av tre olika saker
-            XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
-                                          where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
-                                          select a.Element("jaktledare")).Single();
-
-            List<string> jaktledarinfo = new List<string>();
-            jaktledarinfo.Add(aktuellJaktledare.Element("namn").Value);
-            jaktledarinfo.Add(aktuellJaktledare.Element("email").Value);
-            jaktledarinfo.Add(aktuellJaktledare.Element("telefon").Value);
-            
-
+                List<string> jaktledarinfo = new List<string>();
+                XElement jaktlag = XElement.Load(path);
+                XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
+                                              where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                              select a.Element("jaktledare")).Single();
+                
+                jaktledarinfo.Add(aktuellJaktledare.Element("namn").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("email").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("telefon").Value);                                   
             return jaktledarinfo;
         }
 
         protected void jaktledare_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<string> jaktledarinfo = new List<string>();
-            List<string> rapportörinfo = new List<string>();
-            jaktledarinfo = HämtaJaktledare(jaktledare.Text);
-            txtJaktledare.Text = jaktledarinfo[0];
-            txtEpostJaktledare.Text = jaktledarinfo[1];
-            txtTelefonJaktledare.Text = jaktledarinfo[2];
+            if (jaktledare.SelectedItem.Text == "Välj ett jaktlag")
+            {
+                txtJaktledare.Text = string.Empty;
+                txtEpostJaktledare.Text = string.Empty;
+                txtTelefonJaktledare.Text = string.Empty;
 
-            
-            rapportörinfo = HämtaRapportör(jaktledare.Text);
-            txtRapportör.Text = rapportörinfo[0];
-            txtEpostRapportör.Text = rapportörinfo[1];
-            txtTelefonRapportör.Text = rapportörinfo[2];
-            
+                txtRapportör.Text = string.Empty;
+                txtEpostRapportör.Text = string.Empty;
+                txtTelefonRapportör.Text = string.Empty;
+            }
+            else
+            {
+                List<string> jaktledarinfo = new List<string>();
+                List<string> rapportörinfo = new List<string>();
+                jaktledarinfo = HämtaJaktledare(jaktledare.Text);
+                txtJaktledare.Text = jaktledarinfo[0];
+                txtEpostJaktledare.Text = jaktledarinfo[1];
+                txtTelefonJaktledare.Text = jaktledarinfo[2];
+
+                rapportörinfo = HämtaRapportör(jaktledare.Text);
+                txtRapportör.Text = rapportörinfo[0];
+                txtEpostRapportör.Text = rapportörinfo[1];
+                txtTelefonRapportör.Text = rapportörinfo[2];
+            }
         }
 
         public List<string> HämtaRapportör(string jaktlagsnamn)
@@ -97,32 +105,43 @@ namespace Slutuppgift
 
         private void UppdateraJaktledare(string jaktlagsnamn)
         {
-            XElement älgskötselområde = XElement.Load(path);
+            if (jaktledare.SelectedItem.Text == "Välj ett jaktlag")
+            {
 
-            //denna som är tokig, 
-            XElement aktuellJaktledare = (from a in älgskötselområde.Elements("jaktlag")
-                                          where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
-                                          select a.Element("jaktledare")).Single();
+            }
+            else
+            {
+                XElement älgskötselområde = XElement.Load(path);
 
-           aktuellJaktledare.SetElementValue("namn", txtJaktledare.Text);
-           aktuellJaktledare.SetElementValue("email", txtEpostJaktledare.Text);
-           aktuellJaktledare.SetElementValue("telefon", txtTelefonJaktledare.Text);
-            älgskötselområde.Save(path);
+                XElement aktuellJaktledare = (from a in älgskötselområde.Elements("jaktlag")
+                                              where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                              select a.Element("jaktledare")).Single();
+
+                aktuellJaktledare.SetElementValue("namn", txtJaktledare.Text);
+                aktuellJaktledare.SetElementValue("email", txtEpostJaktledare.Text);
+                aktuellJaktledare.SetElementValue("telefon", txtTelefonJaktledare.Text);
+                älgskötselområde.Save(path);
+            }
         }
 
         private void UppdateraRapportör(string jaktlagsnamn)
         {
-            XElement jaktområde = XElement.Load(path);
-            XElement aktuellRapportör = (from a in jaktområde.Elements("jaktlag")
-                                         where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
-                                         select a.Element("rapportör")).Single();
+            if (jaktledare.SelectedItem.Text == "Välj ett jaktlag")
+            {
 
-            aktuellRapportör.SetElementValue("namn", txtRapportör.Text);
-            aktuellRapportör.SetElementValue("email", txtEpostRapportör.Text);
-            aktuellRapportör.SetElementValue("telefon", txtTelefonRapportör.Text);
+            }
+            else
+            {
+                XElement jaktområde = XElement.Load(path);
+                XElement aktuellRapportör = (from a in jaktområde.Elements("jaktlag")
+                                             where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                             select a.Element("rapportör")).Single();
 
-            jaktområde.Save(path);
-
+                aktuellRapportör.SetElementValue("namn", txtRapportör.Text);
+                aktuellRapportör.SetElementValue("email", txtEpostRapportör.Text);
+                aktuellRapportör.SetElementValue("telefon", txtTelefonRapportör.Text);
+                jaktområde.Save(path);
+            }
         }
 
         protected void submitRapportör_Click(object sender, EventArgs e)
@@ -130,7 +149,5 @@ namespace Slutuppgift
             string jaktlag = jaktledare.SelectedItem.ToString();
             UppdateraRapportör(jaktlag);
         }
-	
-
     }
 }

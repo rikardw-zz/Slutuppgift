@@ -75,7 +75,7 @@
       <BrowseToURL>~/login.aspx</BrowseToURL>
     </Content>
     <Content Include="andra_uppgifter.aspx">
-      <BrowseToURL>~/andra_uppgfter.aspx</BrowseToURL>
+      <BrowseToURL>~/andra_uppgifter.aspx</BrowseToURL>
     </Content>
   </ItemGroup>
   <ItemGroup>

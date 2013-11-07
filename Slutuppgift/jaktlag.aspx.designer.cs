@@ -22,15 +22,6 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.DropDownList jaktlagInfo;
         
         /// <summary>
-        /// kontaktuppgift control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label kontaktuppgift;
-        
-        /// <summary>
         /// jaktledarnamn control.
         /// </summary>
         /// <remarks>
@@ -121,21 +112,39 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.Label getfalldaalghonor;
         
         /// <summary>
-        /// falldakalvar control.
+        /// falldahankalvar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label falldakalvar;
+        protected global::System.Web.UI.WebControls.Label falldahankalvar;
         
         /// <summary>
-        /// getfalldakalvar control.
+        /// getfalldahankalvar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label getfalldakalvar;
+        protected global::System.Web.UI.WebControls.Label getfalldahankalvar;
+        
+        /// <summary>
+        /// falldahonkalvar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label falldahonkalvar;
+        
+        /// <summary>
+        /// getfalldahonkalvar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label getfalldahonkalvar;
     }
 }

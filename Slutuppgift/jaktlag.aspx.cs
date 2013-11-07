@@ -64,7 +64,8 @@ namespace Slutuppgift
                 gettelefon.Text = jaktledarinfo[2];
                 getfalldaalghanar.Text = HämtaSkjutnaHanar().ToString();
                 getfalldaalghonor.Text = HämtaSkjutnaHonor().ToString();
-                getfalldakalvar.Text = HämtaSkjutnaKalvar().ToString();
+                getfalldahankalvar.Text = HämtaSkjutnaHanKalvar().ToString();
+                getfalldahonkalvar.Text = HämtaSkjutnaHonKalvar().ToString();
             }
 
             protected double HämtaSkjutnaHonor()
@@ -101,7 +102,7 @@ namespace Slutuppgift
 
             }
 
-            protected double HämtaSkjutnaKalvar()
+          /*  protected double HämtaSkjutnaKalvar()
             {
                 string valtjaktlag = jaktlagInfo.SelectedItem.ToString();
                 string strFileName = Server.MapPath("Jaktlag.xml");
@@ -115,6 +116,37 @@ namespace Slutuppgift
                                 where (int)a.Element("ålder") == 0
                                 select (a.Element("ålder"))).Count();
                 return xmlValue;               
-            }       
+            }    */
+            protected double HämtaSkjutnaHanKalvar()
+            {
+                string valtjaktlag = jaktlagInfo.SelectedItem.ToString();
+                string strFileName = Server.MapPath("Jaktlag.xml");
+                XDocument xmlDoc = XDocument.Load(strFileName);
+
+                var aktuelltJaktlag = (from a in xmlDoc.Descendants("jaktlag")
+                                       where (string)a.Element("jaktlagsnamn") == valtjaktlag
+                                       select a).Single();
+
+                var xmlValue = (from a in aktuelltJaktlag.Elements("avskutning")
+                                where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hane"
+                                select (a.Element("ålder"))).Count();
+                return xmlValue;
+            }
+
+            protected double HämtaSkjutnaHonKalvar()
+            {
+                string valtjaktlag = jaktlagInfo.SelectedItem.ToString();
+                string strFileName = Server.MapPath("Jaktlag.xml");
+                XDocument xmlDoc = XDocument.Load(strFileName);
+
+                var aktuelltJaktlag = (from a in xmlDoc.Descendants("jaktlag")
+                                       where (string)a.Element("jaktlagsnamn") == valtjaktlag
+                                       select a).Single();
+
+                var xmlValue = (from a in aktuelltJaktlag.Elements("avskutning")
+                                where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hona"
+                                select (a.Element("ålder"))).Count();
+                return xmlValue;
+            }   
     }
 }

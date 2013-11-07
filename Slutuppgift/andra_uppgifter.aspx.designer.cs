@@ -22,6 +22,15 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.DropDownList jaktledare;
         
         /// <summary>
+        /// tomruta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListItem tomruta;
+        
+        /// <summary>
         /// txtJaktledare control.
         /// </summary>
         /// <remarks>
