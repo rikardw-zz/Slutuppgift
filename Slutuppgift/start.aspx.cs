@@ -24,7 +24,7 @@ namespace Slutuppgift
             snittviktkalvar.Text = HämtaViktKalv().ToString() + " kg";
             snittalderhanar.Text = HämtaÅlderHanar().ToString() + " år";
             snittalderhonor.Text = HämtaÅlderHonor().ToString() + " år";
-            taggar.Text = HämtaTaggar().ToString();          
+            taggar.Text = HämtaTaggar().ToString() + " taggar";          
         }
 
         protected double HämtaViktHane()
@@ -35,7 +35,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hane"
                             select (double.Parse(a.Element("vikt").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaViktHona()
@@ -46,7 +46,8 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hona"
                             select (double.Parse(a.Element("vikt").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
+            
         }
 
         protected double HämtaViktKalv()
@@ -57,7 +58,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (int)a.Element("ålder") == 0
                             select (double.Parse(a.Element("vikt").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaÅlderHanar()
@@ -68,7 +69,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hane"
                             select (double.Parse(a.Element("ålder").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaÅlderHonor()
@@ -79,7 +80,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hona"
                             select (double.Parse(a.Element("ålder").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaTaggar()
@@ -90,7 +91,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hane"
                             select (double.Parse(a.Element("taggar").Value))).Average();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
        protected double HämtaSkjutnaHanar()
@@ -100,7 +101,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")                            
                             where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hane"
                             select (a.Element("Hane"))).Count();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaSkjutnaHonor()
@@ -110,7 +111,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hona"
                             select (a.Element("Hona"))).Count();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaSkjutnaHanKalvar()
@@ -120,7 +121,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hane"
                             select (a.Element("Hane"))).Count();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
         protected double HämtaSkjutnaHonKalvar()
         {
@@ -129,7 +130,7 @@ namespace Slutuppgift
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hona"
                             select (a.Element("Hona"))).Count();
-            return xmlValue;
+            return Convert.ToInt32(xmlValue);
         }
     }
 }

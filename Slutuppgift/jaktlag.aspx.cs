@@ -28,8 +28,6 @@ namespace Slutuppgift
                 jaktlagInfo.Items.Add(s);
         }
         
-
-
             protected List<string> HämtaJaktlag()
         {
             XElement älgskötselområde = XElement.Load(path);
