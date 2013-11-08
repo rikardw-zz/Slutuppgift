@@ -34,7 +34,8 @@
             <asp:TextBox ID="ålder" runat="server" placeholder="Ålder" ></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="submit" runat="server" Text="Skicka uppgifter" OnClick="submit_Click"/>
+            <asp:Button ID="submit" runat="server" Text="Skicka uppgifter" OnClick="submit_Click" OnClientClick="javascript:return alert('Älg registrerad');" />
+
         </p>
     
     <script type="text/javascript" src="slutuppgift.js"></script>

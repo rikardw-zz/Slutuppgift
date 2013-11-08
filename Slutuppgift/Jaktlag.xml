@@ -54,6 +54,22 @@
       <taggar>8</taggar>
       <ålder>3</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Bertil</namn>
+      <datum>2013-11-20</datum>
+      <kön>Hane</kön>
+      <vikt>120</vikt>
+      <taggar>2</taggar>
+      <ålder>1</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Fredde</namn>
+      <datum>2013-11-04</datum>
+      <kön>Hona</kön>
+      <vikt>200</vikt>
+      <taggar>0</taggar>
+      <ålder>4</ålder>
+    </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
