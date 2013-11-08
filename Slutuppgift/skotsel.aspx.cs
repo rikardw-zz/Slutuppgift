@@ -14,8 +14,8 @@ namespace Slutuppgift
     public partial class WebForm3 : System.Web.UI.Page
     {
         private string path = "";
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        protected void Page_Load(object sender, EventArgs e)        
+        {            
             path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml");
             if (!IsPostBack)
             {
@@ -54,22 +54,14 @@ namespace Slutuppgift
                             new XElement("ålder", ålder.Text)));
                             
             älgskötselområde.Save(path);
-          /*  skytt.Text = String.Empty;
-            datum.Text = String.Empty;
-            kön.Text = String.Empty;
-            vikt.Text = String.Empty;
-            taggar.Text = String.Empty;
-            ålder.Text = String.Empty;   
-          */ 
         }
       
         protected void submit_Click(object sender, EventArgs e)
-        {
+        {           
+                string jaktlag = lbjaktlag.SelectedItem.ToString();
+                string skyttnamn = skytt.Text;
 
-            string jaktlag = lbjaktlag.SelectedItem.ToString();
-            string skyttnamn = skytt.Text;
-
-            LäggTillAvskutning(jaktlag, skyttnamn);
+                LäggTillAvskutning(jaktlag, skyttnamn);                        
         }    
     }
 }

@@ -83,8 +83,7 @@ namespace Slutuppgift
 
         public List<string> HämtaRapportör(string jaktlagsnamn)
         {
-            XElement jaktlag = XElement.Load(path);
-            //har hela jaktlagselement,består av tre olika saker
+            XElement jaktlag = XElement.Load(path);          
             XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
                                           where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
                                           select a.Element("rapportör")).Single();
@@ -107,7 +106,7 @@ namespace Slutuppgift
         {
             if (jaktledare.SelectedItem.Text == "Välj ett jaktlag")
             {
-
+                //utför dvs ingenting
             }
             else
             {
@@ -128,7 +127,7 @@ namespace Slutuppgift
         {
             if (jaktledare.SelectedItem.Text == "Välj ett jaktlag")
             {
-
+                //utför ingenting
             }
             else
             {

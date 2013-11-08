@@ -15,8 +15,7 @@ h2 {
 	font-size: 24px;
     margin: 0px;
     padding: 0px;
-	color: black;			
-		
+	color: black;				
 }
 
 h3 {
@@ -37,7 +36,6 @@ h4 {
     margin: 3px 0px 10px 0px;
 }
     					
-
 p {
     font-size: 14px;		
 }
@@ -47,8 +45,6 @@ body{
 	margin: 40px;
 	background-image:url('bakgrund1.jpg');
 	background-repeat:repeat;
-
-
 }
 
 .container{
@@ -75,19 +71,14 @@ body{
     padding: 0px;  
 }
 
-
-
-
 .statsname {
     height: 500px;    
     float:left;
-
 }
 .statsinfo {
     height: 500px;    
     float:left;
 }
-
 
 .mainwindow{
 	background-image:url('bakgrund3.jpg');
@@ -98,8 +89,7 @@ body{
 	height: 500px;
 	border-style: solid;
 	border-width: 3px;
-	border-radius: 10px;
-		
+    border-radius: 10px;		
 }
 
 

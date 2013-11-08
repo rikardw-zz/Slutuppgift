@@ -19,7 +19,7 @@ namespace Slutuppgift
             path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml");
             if (!IsPostBack)
             {
-                LaddaJaktlag(HämtaJaktlag());
+                LaddaJaktlag(HämtaJaktlag());                                
             }        
         }
         void LaddaJaktlag(List<string> lista)
@@ -41,8 +41,7 @@ namespace Slutuppgift
 
             public List<string> HämtaJaktledare(string jaktlagsnamn)
             {
-                XElement jaktlag = XElement.Load(path);
-                //har hela jaktlagselement,består av tre olika saker
+                XElement jaktlag = XElement.Load(path);             
                 XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
                                         where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
                                         select a.Element("jaktledare")).Single();
@@ -100,23 +99,7 @@ namespace Slutuppgift
                                 select (a.Element("Hane"))).Count();
                 return xmlValue;
 
-            }
-
-          /*  protected double HämtaSkjutnaKalvar()
-            {
-                string valtjaktlag = jaktlagInfo.SelectedItem.ToString();
-                string strFileName = Server.MapPath("Jaktlag.xml");
-                XDocument xmlDoc = XDocument.Load(strFileName);
-
-                var aktuelltJaktlag = (from a in xmlDoc.Descendants("jaktlag")
-                                       where (string)a.Element("jaktlagsnamn") == valtjaktlag
-                                       select a).Single();
-
-                var xmlValue = (from a in aktuelltJaktlag.Elements("avskutning")
-                                where (int)a.Element("ålder") == 0
-                                select (a.Element("ålder"))).Count();
-                return xmlValue;               
-            }    */
+            }    
             protected double HämtaSkjutnaHanKalvar()
             {
                 string valtjaktlag = jaktlagInfo.SelectedItem.ToString();

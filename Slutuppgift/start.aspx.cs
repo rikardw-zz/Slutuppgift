@@ -24,8 +24,7 @@ namespace Slutuppgift
             snittviktkalvar.Text = HämtaViktKalv().ToString() + " kg";
             snittalderhanar.Text = HämtaÅlderHanar().ToString() + " år";
             snittalderhonor.Text = HämtaÅlderHonor().ToString() + " år";
-            taggar.Text = HämtaTaggar().ToString();
-           // skjutnahanar.Text = HämtaSkjutnaHanar().ToString();
+            taggar.Text = HämtaTaggar().ToString();          
         }
 
         protected double HämtaViktHane()
@@ -93,9 +92,6 @@ namespace Slutuppgift
                             select (double.Parse(a.Element("taggar").Value))).Average();
             return xmlValue;
         }
-
-
-
 
        protected double HämtaSkjutnaHanar()
         {
