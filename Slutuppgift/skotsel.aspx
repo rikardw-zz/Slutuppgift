@@ -9,17 +9,21 @@
             Här kan du rapportera skutna älgar <p/>
             <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
         <p>            
-           <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>
+           <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>           
         </p>
         <p>                        
             <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>
         </p>
         <p>            
-            <asp:TextBox ID="kön" runat="server" style="text-transform:capitalize" placeholder="Kön"></asp:TextBox>
+            <asp:DropDownList ID="kön" runat="server" Width="157px">
+                <asp:ListItem>Hane</asp:ListItem>
+                <asp:ListItem>Hona</asp:ListItem>
+            </asp:DropDownList>
+            
         </p>
         <p>          
             <asp:TextBox ID="vikt" runat="server" placeholder="Vikt (kilo)"></asp:TextBox>
-     <!--       <asp:RangeValidator ControlToValidate="vikt" MinimumValue="10" MaximumValue="850" Type="Integer" EnableClientScript="false" Text="Vikt anges mellan 10 och 800 kilo!" runat="server" /> -->
+            <asp:RangeValidator ControlToValidate="vikt" MinimumValue="10" MaximumValue="850" Type="Integer" EnableClientScript="false" Text="Vikt anges mellan 10 och 800 kilo" runat="server" />
         </p>
 
         <p>            

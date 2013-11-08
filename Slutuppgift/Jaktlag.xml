@@ -85,6 +85,14 @@
       <taggar>0</taggar>
       <ålder>0</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Brolle</namn>
+      <datum>2013-11-13</datum>
+      <kön>Hane</kön>
+      <vikt>100</vikt>
+      <taggar>2</taggar>
+      <ålder>10</ålder>
+    </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Moosehunters</jaktlagsnamn>
@@ -139,6 +147,14 @@
       <vikt>500</vikt>
       <taggar>18</taggar>
       <ålder>3</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Fridolf</namn>
+      <datum>2013-11-06</datum>
+      <kön>Hona</kön>
+      <vikt>40</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
     </avskutning>
   </jaktlag>
 </jakt>

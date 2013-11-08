@@ -60,8 +60,13 @@ namespace Slutuppgift
         {           
                 string jaktlag = lbjaktlag.SelectedItem.ToString();
                 string skyttnamn = skytt.Text;
+                LäggTillAvskutning(jaktlag, skyttnamn);
 
-                LäggTillAvskutning(jaktlag, skyttnamn);                        
+                skytt.Text = string.Empty;
+                datum.Text = string.Empty;
+                vikt.Text = string.Empty;
+                taggar.Text = string.Empty;
+                ålder.Text = string.Empty;
         }    
     }
 }
