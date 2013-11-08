@@ -12,9 +12,9 @@ using System.Xml.Linq;
 namespace Slutuppgift
 {
     public partial class WebForm1 : System.Web.UI.Page
-    {
+    {        
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {           
             skjutnahanar.Text = HämtaSkjutnaHanar().ToString() + "st";
             skjutnahonor.Text = HämtaSkjutnaHonor().ToString() + "st";
             skjutnahankalvar.Text = HämtaSkjutnaHanKalvar().ToString() + "st";
@@ -29,8 +29,7 @@ namespace Slutuppgift
 
         protected double HämtaViktHane()
         {
-            
-            string strFileName = Server.MapPath("Jaktlag.xml");
+            string strFileName = Server.MapPath("Jaktlag.xml");      
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hane"
@@ -40,19 +39,16 @@ namespace Slutuppgift
 
         protected double HämtaViktHona()
         {
-
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
                             where (string)a.Element("kön") == "Hona"
                             select (double.Parse(a.Element("vikt").Value))).Average();
-            return Convert.ToInt32(xmlValue);
-            
+            return Convert.ToInt32(xmlValue);            
         }
 
         protected double HämtaViktKalv()
         {
-
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
@@ -63,7 +59,6 @@ namespace Slutuppgift
 
         protected double HämtaÅlderHanar()
         {
-
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
@@ -123,6 +118,7 @@ namespace Slutuppgift
                             select (a.Element("Hane"))).Count();
             return Convert.ToInt32(xmlValue);
         }
+
         protected double HämtaSkjutnaHonKalvar()
         {
             string strFileName = Server.MapPath("Jaktlag.xml");
