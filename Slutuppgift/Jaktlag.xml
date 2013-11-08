@@ -75,7 +75,7 @@
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
     <jaktledare>
       <namn>Per</namn>
-      <email>person@hotmail.com</email>
+      <email>person@gmail.com</email>
       <telefon>0734584564</telefon>
     </jaktledare>
     <rapportör>
@@ -108,6 +108,14 @@
       <vikt>100</vikt>
       <taggar>2</taggar>
       <ålder>10</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Pelle</namn>
+      <datum>2013-11-14</datum>
+      <kön>Hona</kön>
+      <vikt>100</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
     </avskutning>
   </jaktlag>
   <jaktlag>
