@@ -21,6 +21,7 @@ namespace Slutuppgift
             if (!IsPostBack)
             {
                 LaddaJaktlag(HämtaJaktlag());
+                laddaInloggadRapportör();
             }                               
         }
 
@@ -148,5 +149,48 @@ namespace Slutuppgift
             string jaktlag = jaktledare.SelectedItem.ToString();
             UppdateraRapportör(jaktlag);
         }
+
+        protected void laddaInloggadRapportör() 
+        {
+            string inloggadNamn = HttpContext.Current.User.Identity.Name.ToString();
+            List<string> inloggadInfo = new List<string>();
+
+/*
+            XElement jaktlag = XElement.Load(Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml"));
+            var xmlValue = (from a in jaktlag.Descendants("jaktlag")
+                            where (string)a.Element("rapportör") == inloggadNamn
+                            select a.Element("jaktlagsnamn"));            
+            submitJaktledare.Text = inloggadNamn;
+            submitRapportör.Text = "";
+            */
+
+
+            /*List<string> jaktledarinfo = new List<string>();
+                XElement jaktlag = XElement.Load(path);
+                XElement aktuellJaktledare = (from a in jaktlag.Elements("jaktlag")
+                                              where (string)a.Element("jaktlagsnamn") == jaktlagsnamn
+                                              select a.Element("jaktledare")).Single();
+                
+                jaktledarinfo.Add(aktuellJaktledare.Element("namn").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("email").Value);
+                jaktledarinfo.Add(aktuellJaktledare.Element("telefon").Value);                                   
+            return jaktledarinfo;*/
+
+            /*
+             1: Hämta namn på inloggad person - klar
+             2: Lägg in jaktlagsnamn i string
+             3: Sätt in information i textrutorna på tillhörande jaktlag                          
+             */
+            
+            
+
+         /*   
+            var xmlValue = (from a in jaktlag.Descendants("rapportör")
+                            where (string)a.Element("användarnamn") == name.Text && (string)a.Element("lösenord") == password.Text
+                            select a.Element("rapportör")).Count();*/
+            
+        
+        }
+        
     }
 }

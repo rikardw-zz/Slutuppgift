@@ -67,6 +67,6 @@ namespace Slutuppgift
                 vikt.Text = string.Empty;
                 taggar.Text = string.Empty;
                 ålder.Text = string.Empty;
-        }    
+        }
     }
 }

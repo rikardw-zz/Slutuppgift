@@ -3,7 +3,7 @@
   <jaktlag>
     <jaktlagsnamn>Prickskyttarna</jaktlagsnamn>
     <jaktledare>
-      <namn>Jonpan</namn>
+      <namn>Jonnpan</namn>
       <email>Skottfot@gmail.com</email>
       <telefon>06025231</telefon>
     </jaktledare>
@@ -179,6 +179,14 @@
       <vikt>40</vikt>
       <taggar>0</taggar>
       <ålder>0</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Robban</namn>
+      <datum>2013-11-05</datum>
+      <kön>Hane</kön>
+      <vikt>200</vikt>
+      <taggar>0</taggar>
+      <ålder>2</ålder>
     </avskutning>
   </jaktlag>
 </jakt>

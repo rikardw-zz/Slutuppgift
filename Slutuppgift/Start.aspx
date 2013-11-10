@@ -1,6 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="start.aspx.cs" Inherits="Slutuppgift.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="start.aspx.cs" Inherits="Slutuppgift.WebForm1" %>    
 
-<asp:Content ID="Startsida" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
+<asp:Content ID="Startsida" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
+     
+    <asp:DropDownList ID="väljår" runat="server" AutoPostBack="true" OnSelectedIndexChanged="väljår_SelectedIndexChanged" Width="127px" >
+        <asp:ListItem>2011</asp:ListItem>
+        <asp:ListItem>2012</asp:ListItem>
+        <asp:ListItem>2013</asp:ListItem>
+    </asp:DropDownList>
     <h2>Skjutna älgar:</h2>    
     <div class="statsname">
         <p>
