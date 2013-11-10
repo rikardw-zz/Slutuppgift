@@ -70,6 +70,14 @@
       <taggar>0</taggar>
       <ålder>4</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Bob</namn>
+      <datum>2013-11-01</datum>
+      <kön>Hane</kön>
+      <vikt>1</vikt>
+      <taggar>1</taggar>
+      <ålder>1</ålder>
+    </avskutning>   
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
@@ -116,6 +124,30 @@
       <vikt>100</vikt>
       <taggar>0</taggar>
       <ålder>0</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Olle</namn>
+      <datum>2013-11-16</datum>
+      <kön>Hane</kön>
+      <vikt>1</vikt>
+      <taggar>2</taggar>
+      <ålder>2</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Olle</namn>
+      <datum>2013-11-04</datum>
+      <kön>Hane</kön>
+      <vikt>1</vikt>
+      <taggar>1</taggar>
+      <ålder>1</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Olle</namn>
+      <datum>2013-11-16</datum>
+      <kön>Hane</kön>
+      <vikt>1</vikt>
+      <taggar>6</taggar>
+      <ålder>4</ålder>
     </avskutning>
   </jaktlag>
   <jaktlag>
@@ -187,6 +219,6 @@
       <vikt>200</vikt>
       <taggar>0</taggar>
       <ålder>2</ålder>
-    </avskutning>
+    </avskutning>   
   </jaktlag>
 </jakt>

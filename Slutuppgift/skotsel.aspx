@@ -9,9 +9,10 @@
             <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
         <p>            
            <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>           
+            <asp:RangeValidator ControlToValidate="skytt" Min="2" Max="30" Type="string" EnableClientScript="false" Text="Namn måste vara mellan 2-30 bokstäver" runat="server" ID="RangeValidatorNamn" />
         </p>
         <p>                        
-            <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>
+            <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>           
         </p>
         <p>            
             <asp:DropDownList ID="kön" runat="server" Width="157px">
@@ -22,19 +23,20 @@
         </p>
         <p>          
             <asp:TextBox ID="vikt" runat="server" placeholder="Vikt (kilo)"></asp:TextBox>
-            <asp:RangeValidator ControlToValidate="vikt" MinimumValue="10" MaximumValue="850" Type="Integer" EnableClientScript="false" Text="Vikt anges mellan 10 och 800 kilo" runat="server" />
+            <asp:RangeValidator ControlToValidate="vikt" MinimumValue="10" MaximumValue="850" Type="Integer" EnableClientScript="false" Text="Vikt anges mellan 10 och 850 kilo" runat="server" ID="RangeValidatorVikt" />
         </p>
 
         <p>            
             <asp:TextBox ID="taggar" runat="server" placeholder="Antal taggar"></asp:TextBox>
+             <asp:RangeValidator ControlToValidate="taggar" MinimumValue="0" MaximumValue="50" Type="Integer" EnableClientScript="false" Text="Max antal taggar är 50" runat="server" ID="RangeValidatorTaggar" />
         </p>
        
         <p>            
             <asp:TextBox ID="ålder" runat="server" placeholder="Ålder" ></asp:TextBox>
+            <asp:RangeValidator ControlToValidate="ålder" MinimumValue="0" MaximumValue="50" Type="Integer" EnableClientScript="false" Text="Maxålder är 50 år" runat="server" ID="RangeValidatorÅlder" />
         </p>
         <p>
-            <asp:Button ID="submit" runat="server" Text="Skicka uppgifter" OnClick="submit_Click" OnClientClick="javascript:return alert('Älg registrerad');" />
-
+            <asp:Button ID="submit" runat="server" Text="Skicka uppgifter" OnClick="submit_Click" />
         </p>
     
     <script type="text/javascript" src="slutuppgift.js"></script>
