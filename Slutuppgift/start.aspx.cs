@@ -20,92 +20,117 @@ namespace Slutuppgift
 
         protected double HämtaViktHane()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");      
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (string)a.Element("kön") == "Hane"
-                            select (double.Parse(a.Element("vikt").Value))).Average();
+                            where (string)a.Element("kön") == "Hane" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
+                            select (double.Parse(a.Element("vikt").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaViktHona()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (string)a.Element("kön") == "Hona"
-                            select (double.Parse(a.Element("vikt").Value))).Average();
+                            where ((string)a.Element("kön") == "Hona" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum)
+                            select (double.Parse(a.Element("vikt").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);            
         }
 
         protected double HämtaViktKalv()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") == 0
-                            select (double.Parse(a.Element("vikt").Value))).Average();
+                            where (int)a.Element("ålder") == 0 &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
+                            select (double.Parse(a.Element("vikt").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaÅlderHanar()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (string)a.Element("kön") == "Hane"
-                            select (double.Parse(a.Element("ålder").Value))).Average();
+                            where (string)a.Element("kön") == "Hane" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
+                            select (double.Parse(a.Element("ålder").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaÅlderHonor()
         {
-
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (string)a.Element("kön") == "Hona"
-                            select (double.Parse(a.Element("ålder").Value))).Average();
+                            where (string)a.Element("kön") == "Hona" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
+                            select (double.Parse(a.Element("ålder").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaTaggar()
         {
-
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (string)a.Element("kön") == "Hane"
-                            select (double.Parse(a.Element("taggar").Value))).Average();
+                            where (string)a.Element("kön") == "Hane" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
+                            select (double.Parse(a.Element("taggar").Value))).DefaultIfEmpty().Average();
             return Convert.ToInt32(xmlValue);
         }
 
        protected double HämtaSkjutnaHanar()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
-            var xmlValue = (from a in xmlDoc.Descendants("avskutning")                            
-                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hane"
+            var xmlValue = (from a in xmlDoc.Descendants("avskutning")
+                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hane" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
                             select (a.Element("Hane"))).Count();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaSkjutnaHonor()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hona"
+                            where (int)a.Element("ålder") > 0 && (string)a.Element("kön") == "Hona" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
                             select (a.Element("Hona"))).Count();
             return Convert.ToInt32(xmlValue);
         }
 
         protected double HämtaSkjutnaHanKalvar()
         {
+            DateTime startDatum = new DateTime(Int32.Parse(väljår.Text), 1, 1);
+            DateTime slutDatum = new DateTime(Int32.Parse(väljår.Text), 12, 31);
             string strFileName = Server.MapPath("Jaktlag.xml");
             XDocument xmlDoc = XDocument.Load(strFileName);
             var xmlValue = (from a in xmlDoc.Descendants("avskutning")
-                            where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hane"
+                            where (int)a.Element("ålder") == 0 && (string)a.Element("kön") == "Hane" &&
+                                  (DateTime)a.Element("datum") >= startDatum && (DateTime)a.Element("datum") <= slutDatum
                             select (a.Element("Hane"))).Count();
             return Convert.ToInt32(xmlValue);
         }
