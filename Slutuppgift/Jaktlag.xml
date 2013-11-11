@@ -86,6 +86,14 @@
       <taggar>2</taggar>
       <ålder>2</ålder>
     </avskutning>
+    <avskutning>
+      <namn>Fredriksson</namn>
+      <datum>2012-11-20</datum>
+      <kön>Hona</kön>
+      <vikt>100</vikt>
+      <taggar>0</taggar>
+      <ålder>0</ålder>
+    </avskutning>
   </jaktlag>
   <jaktlag>
     <jaktlagsnamn>Älgjägarna</jaktlagsnamn>
@@ -156,6 +164,22 @@
       <vikt>1</vikt>
       <taggar>6</taggar>
       <ålder>4</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Måns</namn>
+      <datum>2013-11-21</datum>
+      <kön>Hane</kön>
+      <vikt>600</vikt>
+      <taggar>30</taggar>
+      <ålder>45</ålder>
+    </avskutning>
+    <avskutning>
+      <namn>Olle</namn>
+      <datum>2011-11-05</datum>
+      <kön>Hona</kön>
+      <vikt>200</vikt>
+      <taggar>2</taggar>
+      <ålder>2</ålder>
     </avskutning>
   </jaktlag>
   <jaktlag>

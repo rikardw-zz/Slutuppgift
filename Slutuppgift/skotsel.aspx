@@ -12,7 +12,7 @@
     <p>
         <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>
          <asp:RequiredFieldValidator ControlToValidate="skytt" EnableClientScript="false" Text="Du måste fylla i namn" runat="server" ForeColor="Red" ID="RequiredFieldValidatorNamn" />
-        <asp:RegularExpressionValidator ID="RegularExpressionValidatorSkytt" runat="server" ErrorMessage="Endast bokstäver tillåtna" ControlToValidate="skytt" ValidationExpression="^[a-z]*$" />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidatorSkytt" runat="server" ErrorMessage="Endast bokstäver tillåtna" ControlToValidate="skytt" ForeColor="Red" ValidationExpression="^[a-zA-ZåäöÅÄÖ]+$" />
     </p>
     <p>
         <asp:TextBox ID="datum" runat="server" placeholder="Datum"></asp:TextBox>
