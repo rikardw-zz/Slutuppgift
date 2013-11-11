@@ -15,11 +15,15 @@ namespace Slutuppgift
     {
         private string path = "";
         protected void Page_Load(object sender, EventArgs e)        
-        {            
+        {           
+         //   this.listBoxControl1.MyListBox.SetSelected(0,true);
+         //   lbjaktlag.SetSelected(0,true);
+           // lbjaktlag.Items[0].Selected = true;
             path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"Jaktlag.xml");
             if (!IsPostBack)
             {
                 LaddaJaktlag(HämtaJaktlag());
+                lbjaktlag.Items[0].Selected = true;
             }        
         }
 
@@ -60,13 +64,15 @@ namespace Slutuppgift
         {           
                 string jaktlag = lbjaktlag.SelectedItem.ToString();
                 string skyttnamn = skytt.Text;
-                LäggTillAvskutning(jaktlag, skyttnamn);
-
-                skytt.Text = string.Empty;
-                datum.Text = string.Empty;
-                vikt.Text = string.Empty;
-                taggar.Text = string.Empty;
-                ålder.Text = string.Empty;
+                if (Page.IsValid) //utför endast detta om valideringen passeras
+                {
+                    LäggTillAvskutning(jaktlag, skyttnamn);
+                    skytt.Text = string.Empty;
+                    datum.Text = string.Empty;
+                    vikt.Text = string.Empty;
+                    taggar.Text = string.Empty;
+                    ålder.Text = string.Empty;
+                }                
         }
     }
 }

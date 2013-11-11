@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="start.aspx.cs" Inherits="Slutuppgift.WebForm1" %>    
 
 <asp:Content ID="Startsida" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
-     
+         
     <asp:DropDownList ID="väljår" runat="server" AutoPostBack="true" OnSelectedIndexChanged="väljår_SelectedIndexChanged" Width="127px" >
         <asp:ListItem>2011</asp:ListItem>
         <asp:ListItem>2012</asp:ListItem>
@@ -58,11 +58,11 @@
         </p>
         <p>
             <asp:Label ID="skjutnahankalvar" runat="server" Text="-"></asp:Label>
-        </p>
-                <p>
+        </p>                
+        <p>
             <asp:Label ID="skjutnahonkalvar" runat="server" Text="-"></asp:Label>
         </p>
-        <h2>
+        <h2>        
             <br />
         </h2>
         <p>
@@ -74,8 +74,8 @@
         <p>
             <asp:Label ID="snittviktkalvar" runat="server" Text="-"></asp:Label>
         </p>
-         <h2>
-             <br />
+         <h2>          
+              <br />
          </h2>
         <p>
             <asp:Label ID="snittalderhanar" runat="server" Text="-"></asp:Label>

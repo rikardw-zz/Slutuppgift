@@ -22,6 +22,15 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.ListBox lbjaktlag;
         
         /// <summary>
+        /// RequiredFieldValidatorJaktlag control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorJaktlag;
+        
+        /// <summary>
         /// skytt control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,22 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox skytt;
         
         /// <summary>
-        /// RangeValidatorNamn control.
+        /// RequiredFieldValidatorNamn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorNamn;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorNamn;
+        
+        /// <summary>
+        /// RegularExpressionValidatorSkytt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorSkytt;
         
         /// <summary>
         /// datum control.
@@ -47,6 +65,24 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox datum;
+        
+        /// <summary>
+        /// RangeValidatorDatum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorDatum;
+        
+        /// <summary>
+        /// RequiredFieldValidatorDatum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDatum;
         
         /// <summary>
         /// kön control.
@@ -76,6 +112,15 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorVikt;
         
         /// <summary>
+        /// RequiredFieldValidatorVikt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorVikt;
+        
+        /// <summary>
         /// taggar control.
         /// </summary>
         /// <remarks>
@@ -94,6 +139,15 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorTaggar;
         
         /// <summary>
+        /// RequiredFieldValidatorTaggar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorTaggar;
+        
+        /// <summary>
         /// ålder control.
         /// </summary>
         /// <remarks>
@@ -110,6 +164,15 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorÅlder;
+        
+        /// <summary>
+        /// RequiredFieldValidatorÅlder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorÅlder;
         
         /// <summary>
         /// submit control.
