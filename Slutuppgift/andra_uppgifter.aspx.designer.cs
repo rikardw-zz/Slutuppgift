@@ -13,15 +13,6 @@ namespace Slutuppgift {
     public partial class WebForm5 {
         
         /// <summary>
-        /// jaktledare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList jaktledare;
-        
-        /// <summary>
         /// txtJaktledare control.
         /// </summary>
         /// <remarks>

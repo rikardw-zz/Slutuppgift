@@ -11,7 +11,7 @@
     <asp:RequiredFieldValidator ControlToValidate="lbjaktlag" EnableClientScript="false" Text="Du måste välja ett jaktlag" runat="server" ForeColor="Red" ID="RequiredFieldValidatorJaktlag" />    
     <p>
         <asp:TextBox ID="skytt" runat="server" placeholder="Namn på skytt" Style="text-align: left"></asp:TextBox>
-         <asp:RequiredFieldValidator ControlToValidate="skytt" EnableClientScript="false" Text="Du måste fylla i namn" runat="server" ForeColor="Red" ID="RequiredFieldValidatorNamn" />
+        <asp:RequiredFieldValidator ControlToValidate="skytt" EnableClientScript="false" Text="Du måste fylla i namn" runat="server" ForeColor="Red" ID="RequiredFieldValidatorNamn" />
         <asp:RegularExpressionValidator ID="RegularExpressionValidatorSkytt" runat="server" ErrorMessage="Endast bokstäver tillåtna" ControlToValidate="skytt" ForeColor="Red" ValidationExpression="^[a-zA-ZåäöÅÄÖ]+$" />
     </p>
     <p>

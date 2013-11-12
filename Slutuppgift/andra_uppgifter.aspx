@@ -5,9 +5,6 @@
     <p>
         Här kan du ändra uppgifter för jaktledare och rapportör
     <p/>
-    <asp:DropDownList runat="server" ID="jaktledare" Width="160px" AutoPostBack="True" OnSelectedIndexChanged="jaktledare_SelectedIndexChanged">  
-        <asp:ListItem Text="Välj ett jaktlag" Value=""/>                              
-    </asp:DropDownList>  
     <div class ="statsname">
     <p>
         Jaktledare:        
