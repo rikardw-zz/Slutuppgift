@@ -3,13 +3,14 @@
 <asp:Content ID="Startsida" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
          
     <h2>Skjutna älgar:</h2>   
-    <asp:DropDownList ID="väljår" runat="server" AutoPostBack="true" OnSelectedIndexChanged="väljår_SelectedIndexChanged" Width="127px" >
+    Här kan du se årlig statistik
+    <hr /> 
+    <div class="statsname">
+        <asp:DropDownList ID="väljår" runat="server" AutoPostBack="true" OnSelectedIndexChanged="väljår_SelectedIndexChanged" Width="127px" >
         <asp:ListItem>2013</asp:ListItem>
         <asp:ListItem>2012</asp:ListItem>
         <asp:ListItem>2011</asp:ListItem>
-    </asp:DropDownList>    
-    <hr /> 
-    <div class="statsname">
+        </asp:DropDownList>    
         <p>
             Älghanar:
         </p>
@@ -51,6 +52,7 @@
         </p>
     </div>
     <div class="statsinfo">
+        <p><br /></p>
         <p>
             <asp:Label ID="skjutnahanar" runat="server" Text="-"></asp:Label>
         </p>

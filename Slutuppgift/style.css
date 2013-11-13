@@ -37,14 +37,21 @@ h4 {
 }
     					
 p {
-    font-size: 14px;		
+    font-size: 12px;		
 }
+
+.logOut {  color: #6C6C6C;}
+.logOut:hover { color: black;}
 
 body{
 	font-family: Arial;
 	margin: 40px;
 	background-image:url('bakgrund1.jpg');
 	background-repeat:repeat;
+}
+
+a:link {
+    color: white; 
 }
 
 .container{
@@ -70,6 +77,7 @@ body{
     margin: 0px;
     padding: 0px;  
 }
+
 
 .statsname {
     height: 500px;    
