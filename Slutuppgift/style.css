@@ -74,10 +74,12 @@ body{
 .statsname {
     height: 500px;    
     float:left;
+    width: 271px;
 }
 .statsinfo {
-    height: 500px;    
+    height: 390px;    
     float:left;
+    width: 310px;
 }
 
 .mainwindow{

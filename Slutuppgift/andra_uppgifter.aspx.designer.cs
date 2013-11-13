@@ -22,6 +22,24 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtJaktledare;
         
         /// <summary>
+        /// RFVtxtJaktledare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVtxtJaktledare;
+        
+        /// <summary>
+        /// REVtxtJaktledare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVtxtJaktledare;
+        
+        /// <summary>
         /// txtEpostJaktledare control.
         /// </summary>
         /// <remarks>
@@ -29,6 +47,15 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEpostJaktledare;
+        
+        /// <summary>
+        /// REVEpostJaktledare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVEpostJaktledare;
         
         /// <summary>
         /// txtTelefonJaktledare control.
@@ -40,13 +67,22 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtTelefonJaktledare;
         
         /// <summary>
-        /// submitJaktledare control.
+        /// RegularExpressionValidatorJaktledare control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitJaktledare;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorJaktledare;
+        
+        /// <summary>
+        /// submitRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitRapportör;
         
         /// <summary>
         /// txtRapportör control.
@@ -58,6 +94,24 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtRapportör;
         
         /// <summary>
+        /// RFVtxtRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVtxtRapportör;
+        
+        /// <summary>
+        /// REVtxtRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVtxtRapportör;
+        
+        /// <summary>
         /// txtEpostRapportör control.
         /// </summary>
         /// <remarks>
@@ -65,6 +119,15 @@ namespace Slutuppgift {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEpostRapportör;
+        
+        /// <summary>
+        /// REVtxtEpostRapportör control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVtxtEpostRapportör;
         
         /// <summary>
         /// txtTelefonRapportör control.
@@ -76,12 +139,12 @@ namespace Slutuppgift {
         protected global::System.Web.UI.WebControls.TextBox txtTelefonRapportör;
         
         /// <summary>
-        /// submitRapportör control.
+        /// REVtxtTelefonRapportör control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitRapportör;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVtxtTelefonRapportör;
     }
 }

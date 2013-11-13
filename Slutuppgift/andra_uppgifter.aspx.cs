@@ -52,12 +52,6 @@ namespace Slutuppgift
             return rapportörInfo;
         }
 
-        protected void submitJaktledare_Click(object sender, EventArgs e)
-        {
-            string jaktlag = inloggadJaktlag();
-            UppdateraJaktledare(jaktlag);
-        }
-
         private void UppdateraJaktledare(string jaktlagsnamn)
         {
                 XElement älgskötselområde = XElement.Load(path);
@@ -89,8 +83,12 @@ namespace Slutuppgift
 
         protected void submitRapportör_Click(object sender, EventArgs e)
         {
-            string jaktlag = inloggadJaktlag();
-            UppdateraRapportör(jaktlag);
+            if (Page.IsValid)
+                {
+                   string jaktlag = inloggadJaktlag();
+                   UppdateraRapportör(jaktlag);            
+                   UppdateraJaktledare(jaktlag);
+                }
         }
 
         protected void aktuelltJaktlag() 
