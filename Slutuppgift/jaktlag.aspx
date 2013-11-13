@@ -3,7 +3,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>Jaktlag</h2>
-    <p>Här kan du se uppgifter från jaktlagen</p>
+    Här kan du se uppgifter från jaktlagen
+    <hr />
     <asp:DropDownList runat="server" ID="jaktlagInfo" Width="200px" AutoPostBack="True" OnSelectedIndexChanged="jaktlagInfo_SelectedIndexChanged" />                                    
     <br />
     <br />

@@ -2,12 +2,13 @@
 
 <asp:Content ID="Startsida" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
          
+    <h2>Skjutna älgar:</h2>   
     <asp:DropDownList ID="väljår" runat="server" AutoPostBack="true" OnSelectedIndexChanged="väljår_SelectedIndexChanged" Width="127px" >
         <asp:ListItem>2013</asp:ListItem>
         <asp:ListItem>2012</asp:ListItem>
         <asp:ListItem>2011</asp:ListItem>
-    </asp:DropDownList>
-    <h2>Skjutna älgar:</h2>    
+    </asp:DropDownList>    
+    <hr /> 
     <div class="statsname">
         <p>
             Älghanar:

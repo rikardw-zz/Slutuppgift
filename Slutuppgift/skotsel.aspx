@@ -5,8 +5,8 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
     <h2>Rapportering</h2>
-    Här kan du rapportera skutna älgar 
-    <p />
+    Här kan du rapportera skjutna älgar 
+    <hr />
     <asp:ListBox ID="lbjaktlag" runat="server" Width="128px"></asp:ListBox>
     <asp:RequiredFieldValidator ControlToValidate="lbjaktlag" EnableClientScript="false" Text="Du måste välja ett jaktlag" runat="server" ForeColor="Red" ID="RequiredFieldValidatorJaktlag" />    
     <p>
